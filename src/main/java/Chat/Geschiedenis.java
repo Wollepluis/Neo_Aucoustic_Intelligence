@@ -11,6 +11,7 @@ public class Geschiedenis {
                 }
             }
         }
+        return "Er is geen chat gevonden met dit ID";
     }
 
     public String ophalenChatGeschiedenisSender(int chatId) {
@@ -21,5 +22,6 @@ public class Geschiedenis {
                 }
             }
         }
+        return "Er is geen chat gevonden met dit ID";
     }
 }
