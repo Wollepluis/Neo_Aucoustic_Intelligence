@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Added Chat">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/Bericht.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/Geschiedenis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/Bericht.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/Bericht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/Geschiedenis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/Geschiedenis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +76,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -95,7 +101,17 @@
       <workItem from="1716801874305" duration="58000" />
       <workItem from="1716802351292" duration="437000" />
       <workItem from="1716802890911" duration="814000" />
+      <workItem from="1716804037484" duration="1867000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Chat">
+      <option name="closed" value="true" />
+      <created>1716804208661</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716804208661</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
