@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented a test testcase">
-      <change afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented EventHandler tests and updated the EventHandler">
+      <change afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/EventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/EventArgs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/EventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "JUnit.All in Neo_Aucoustic_Intelligence.executor": "Run",
     "JUnit.EventHandlerTests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -71,7 +70,15 @@
       <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in Neo_Aucoustic_Intelligence">
+    <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Neo_Aucoustic_Intelligence" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EventHandlerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Neo_Aucoustic_Intelligence" />
       <extension name="coverage">
@@ -89,6 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
         <item itemvalue="JUnit.EventHandlerTests" />
       </list>
     </recent_temporary>
@@ -142,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717068039468</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implemented EventHandler tests and updated the EventHandler">
+      <option name="closed" value="true" />
+      <created>1717071365716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071365716</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +178,7 @@
     <MESSAGE value="Added classes for events" />
     <MESSAGE value="implemented the event related classes" />
     <MESSAGE value="implemented a test testcase" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented a test testcase" />
+    <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented EventHandler tests and updated the EventHandler" />
   </component>
 </project>
