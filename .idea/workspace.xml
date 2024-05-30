@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented the event related classes">
-      <change afterPath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented a test testcase">
+      <change afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/Events/empty.tst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/EventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/EventArgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.HelloApplication.executor": "Run",
+    "JUnit.EventHandlerTests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Events",
@@ -131,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717067222244</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implemented a test testcase">
+      <option name="closed" value="true" />
+      <created>1717068039468</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717068039468</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +161,7 @@
     <MESSAGE value="Added &quot;tests&quot; folder" />
     <MESSAGE value="Added classes for events" />
     <MESSAGE value="implemented the event related classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented the event related classes" />
+    <MESSAGE value="implemented a test testcase" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented a test testcase" />
   </component>
 </project>

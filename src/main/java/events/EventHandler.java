@@ -6,16 +6,24 @@ public class EventHandler {
     private final ArrayList<IEventListener> listeners = new ArrayList<>();
 
     public void subscribe(IEventListener listener){
-        listeners.add(listener);
+        if (!contains(listener)){
+            listeners.add(listener);
+        }
     }
 
     public void unsubscribe(IEventListener listener){
-        listeners.remove(listener);
+        if (contains(listener)){
+            listeners.remove(listener);
+        }
     }
 
-    public void invoke(EventArgs args){
+    public boolean contains(IEventListener listener){
+        return listeners.contains(listener);
+    }
+
+    public void invoke(Object sender, EventArgs args){
         for (IEventListener listener : listeners){
-            listener.invoke(this, args);
+            listener.invoke(sender, args);
         }
     }
 }
