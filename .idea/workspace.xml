@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented EventListener tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Login/Gebruiker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/LoginSchermController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/LoginScherm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +33,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "HHSWilliam"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HHSWilliam&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git",
-    "accountId": "0cb2ced7-f498-45f8-bd85-7bcf9f524a47"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git&quot;,
+    &quot;accountId&quot;: &quot;0cb2ced7-f498-45f8-bd85-7bcf9f524a47&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -59,7 +61,7 @@
     "JUnit.EventHandlerTests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Events",
+    "git-widget-placeholder": "Login2",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -71,7 +73,7 @@
       <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Neo_Aucoustic_Intelligence">
+  <component name="RunManager">
     <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Neo_Aucoustic_Intelligence" />
       <option name="PACKAGE_NAME" value="" />
