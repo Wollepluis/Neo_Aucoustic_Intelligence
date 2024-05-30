@@ -11,7 +11,7 @@ public class Chat {
     }
 
     public void voegBerichtToe(Bericht bericht) {
-
+        berichten.add(bericht);
     }
 
     public Chat (int id, String onderwerp) {
