@@ -1,5 +1,6 @@
 package events;
 
+// Example class for test cases
 public class EventListenerExample {
     private int invokeCounter = 0;
 
