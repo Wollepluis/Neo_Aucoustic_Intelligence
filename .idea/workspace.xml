@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Updated .gitignore">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/MainPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/Rectangle_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/pluh_copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/sui_generis_rg.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/textborder.css" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="FXML_Bestand aangemaakt&#10;&#10;MainPageController clean gekopieerd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717065379460</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FXML_Bestand aangemaakt&#10;&#10;MainPageController clean gekopieerd">
+      <option name="closed" value="true" />
+      <created>1717071513336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071513336</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated .gitignore" />
+    <MESSAGE value="FXML_Bestand aangemaakt&#10;&#10;MainPageController clean gekopieerd" />
+    <option name="LAST_COMMIT_MESSAGE" value="FXML_Bestand aangemaakt&#10;&#10;MainPageController clean gekopieerd" />
   </component>
 </project>

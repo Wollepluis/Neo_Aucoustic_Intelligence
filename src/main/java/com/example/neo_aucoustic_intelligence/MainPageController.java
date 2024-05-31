@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 public class MainPageController {
 
@@ -15,6 +16,9 @@ public class MainPageController {
 
     @FXML
     private Button button_showSidebar;
+
+    @FXML
+    private AnchorPane sidebar;
 
     @FXML
     private TextField txt_promptField;
@@ -32,6 +36,12 @@ public class MainPageController {
     @FXML
     void showSidebar(ActionEvent event) {
 
+        if (sidebar.isVisible()) {
+            sidebar.setVisible(false);
+        }
+        else {
+            sidebar.setVisible(true);
+        }
     }
 
 }
