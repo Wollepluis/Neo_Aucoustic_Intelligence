@@ -1,5 +1,6 @@
 package com.example.neo_aucoustic_intelligence;
 
+import Login.Login;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -26,7 +27,8 @@ public class LoginSchermController {
 
     @FXML
     void naarMain(ActionEvent event) {
-
+        Login login = new Login();
+        login.inloggen();
     }
 
 }

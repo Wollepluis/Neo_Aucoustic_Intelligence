@@ -1,7 +1,6 @@
 package Login;
 
 import com.example.neo_aucoustic_intelligence.*;
-
 import java.util.HashMap;
 
 public class Login {
