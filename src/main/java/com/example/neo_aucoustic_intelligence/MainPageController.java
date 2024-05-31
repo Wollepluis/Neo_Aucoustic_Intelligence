@@ -3,8 +3,8 @@ package com.example.neo_aucoustic_intelligence;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -18,10 +18,13 @@ public class MainPageController {
     private Button button_logoutDropdown;
 
     @FXML
+    private ImageView button_showSidebar;
+
+    @FXML
     private Label label_title;
 
     @FXML
-    private ImageView button_showSidebar;
+    private ImageView newChat;
 
     @FXML
     private AnchorPane sidebar;
@@ -30,8 +33,16 @@ public class MainPageController {
     private TextField txt_promptField;
 
     @FXML
-    void logoutDropdown(ActionEvent event) {
+    private Button uitlogKnop;
 
+    @FXML
+    void logoutDropdown(ActionEvent event) {
+        if (uitlogKnop.isVisible()) {
+            uitlogKnop.setVisible(false);
+        }
+        else {
+            uitlogKnop.setVisible(true);
+        }
     }
 
     @FXML
@@ -55,4 +66,17 @@ public class MainPageController {
         }
     }
 
+    @FXML
+    void uitloggen(MouseEvent event) {
+
+    }
+
+    @FXML
+    public void initialize() {
+        uitlogKnop.setVisible(false);
+    }
+
+    @FXML
+    void setNewChat(MouseEvent event) {
+    }
 }
