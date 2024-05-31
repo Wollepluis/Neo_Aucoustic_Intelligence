@@ -10,17 +10,11 @@
 
 <AnchorPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.neo_aucoustic_intelligence.MainPageController">
    <children>
-      <AnchorPane layoutY="7.0" prefHeight="393.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="sidebar" layoutY="7.0" prefHeight="393.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button fx:id="button_showSidebar" mnemonicParsing="false" onAction="#showSidebar" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #1d1d1d;" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Rectangle_1.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
+            <Button layoutX="56.0" layoutY="121.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="56.0" layoutY="214.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="56.0" layoutY="275.0" mnemonicParsing="false" text="Button" />
          </children>
       </AnchorPane>
       <Button fx:id="button_logoutDropdown" layoutX="734.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutDropdown" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #383838;" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
@@ -37,7 +31,7 @@
             <Font name="SuiGenerisRg-Regular" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="txt_promptField" layoutX="426.0" layoutY="554.0" prefHeight="50.0" prefWidth="490.0" promptText="Vul hier uw prompt in..." style="-fx-background-color: #4d4d4d;" stylesheets="@style.css" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="80.0">
+      <TextField fx:id="txt_promptField" layoutX="426.0" layoutY="554.0" prefHeight="50.0" prefWidth="490.0" promptText="Vul hier uw prompt in..." style="-fx-background-color: #4d4d4d;" stylesheets="@style.css" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="80.0">
          <font>
             <Font name="SuiGenerisRg-Regular" size="15.0" />
          </font>
@@ -47,6 +41,15 @@
             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@send_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="button_showSidebar" mnemonicParsing="false" onAction="#showSidebar" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #1d1d1d;" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Rectangle_1.png" />
                </image>
             </ImageView>
          </graphic>

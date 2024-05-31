@@ -38,9 +38,11 @@ public class MainPageController {
 
         if (sidebar.isVisible()) {
             sidebar.setVisible(false);
+            txt_promptField.setPrefWidth(680);
         }
         else {
             sidebar.setVisible(true);
+            txt_promptField.setPrefWidth(490);
         }
     }
 
