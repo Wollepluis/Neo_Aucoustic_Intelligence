@@ -18,10 +18,14 @@ public class Login {
 
     public void inloggen(){
         gebruikers.put("Morris", "M123");
-        System.out.println(loginSchermController.gebruikersNaamInput.getText().toString());
+        System.out.println("test");
+        String gebruikersnaam = loginSchermController.gebruikersNaamInput.getText();
+        System.out.println("test2");
+        String wachtwoord = loginSchermController.wachtwoordInput.getText();
+        System.out.println("test3");
+        System.out.println(gebruikersnaam);
 
-
-        if (gebruikers.get(loginSchermController.gebruikersNaamInput.getText()).equals(loginSchermController.wachtwoordInput.getText())) {
+        if (gebruikers.get(gebruikersnaam).equals(wachtwoord)) {
             System.out.println("Jaaaaa");
             ingelogdStatus = true;
             //ga naar de main menu
