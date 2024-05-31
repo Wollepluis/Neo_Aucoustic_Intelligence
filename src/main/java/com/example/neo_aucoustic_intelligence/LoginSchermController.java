@@ -10,6 +10,8 @@ import javafx.scene.layout.AnchorPane;
 
 public class LoginSchermController {
 
+    Login login = new Login();
+
     @FXML
     public AnchorPane Background;
 
@@ -30,7 +32,6 @@ public class LoginSchermController {
 
     @FXML
     void naarMain(ActionEvent event) {
-        Login login = new Login();
         login.inloggen();
     }
 
