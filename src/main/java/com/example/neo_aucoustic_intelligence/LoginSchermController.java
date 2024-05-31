@@ -1,5 +1,6 @@
 package com.example.neo_aucoustic_intelligence;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -22,5 +23,10 @@ public class LoginSchermController {
 
     @FXML
     public PasswordField wachtwoordInput;
+
+    @FXML
+    void naarMain(ActionEvent event) {
+
+    }
 
 }
