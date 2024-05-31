@@ -32,7 +32,9 @@ public class LoginSchermController {
 
     @FXML
     void naarMain(ActionEvent event) {
-        Login login = new Login();
+        String hoi = gebruikersNaamInput.getText();
+        System.out.println(hoi);
+        Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
         login.inloggen();
     }
 

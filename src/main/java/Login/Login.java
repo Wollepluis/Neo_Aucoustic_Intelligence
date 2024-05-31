@@ -5,9 +5,14 @@ import java.util.HashMap;
 
 public class Login {
     private boolean ingelogdStatus;
-    LoginSchermController loginSchermController = new LoginSchermController();
     HashMap<String, String> gebruikers = new HashMap<String, String>();
+    private String gebruikersnaam;
+    private String wachtwoord;
 
+    public Login(String gebruikersnaam, String wachtwoord) {
+        this.gebruikersnaam = gebruikersnaam;
+        this.wachtwoord = wachtwoord;
+    }
 
     public boolean getIngelogdStatus(){
         return ingelogdStatus;
@@ -19,10 +24,6 @@ public class Login {
     public void inloggen(){
         gebruikers.put("Morris", "M123");
         System.out.println("test");
-        String gebruikersnaam = loginSchermController.gebruikersNaamInput.getText();
-        System.out.println("test2");
-        String wachtwoord = loginSchermController.wachtwoordInput.getText();
-        System.out.println("test3");
         System.out.println(gebruikersnaam);
 
         if (gebruikers.get(gebruikersnaam).equals(wachtwoord)) {
@@ -32,7 +33,7 @@ public class Login {
         }
         else {
             //laat zien dat het wachtwoord en gebruikersnaam niet overeen komen
-
+            return;
         }
         System.out.println(2);
     }
