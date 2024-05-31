@@ -5,11 +5,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="Background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.neo_aucoustic_intelligence.LoginSchermController">
+<AnchorPane fx:id="Background" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.neo_aucoustic_intelligence.LoginSchermController">
     <children>
-        <TextField fx:id="gebruikersNaamInput" layoutX="225.0" layoutY="141.0" promptText="Gebruikersnaam" />
-        <PasswordField fx:id="wachtwoordInput" layoutX="225.0" layoutY="187.0" promptText="Wachtwoord" />
-        <Button fx:id="loginButton" layoutX="276.0" layoutY="266.0" mnemonicParsing="false" text="Login" />
+        <TextField fx:id="gebruikersNaamInput" layoutX="225.0" layoutY="141.0" prefHeight="26.0" prefWidth="246.0" promptText="Vul hier uw gebruikersnaam in" />
+        <PasswordField fx:id="wachtwoordInput" layoutX="225.0" layoutY="187.0" prefHeight="26.0" prefWidth="246.0" promptText="Vul hier uw gebruikersnaam in" />
+        <Button fx:id="loginButton" layoutX="276.0" layoutY="266.0" mnemonicParsing="false" onAction="#naarMain" text="Login" />
         <TextField fx:id="errorText" layoutX="176.0" layoutY="222.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="245.0" style="-fx-font-size: 10; -fx-text-fill: red; visibility: false;" text="Gebruikersnaam en wachtwoord komen niet overeen" />
     </children>
 </AnchorPane>
