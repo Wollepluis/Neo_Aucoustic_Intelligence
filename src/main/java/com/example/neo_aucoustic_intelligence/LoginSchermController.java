@@ -36,6 +36,8 @@ public class LoginSchermController {
         System.out.println(hoi);
         Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
         login.inloggen();
+        errorText.setDisable(false);
+        errorText.opacityProperty().set(1);
     }
 
 }
