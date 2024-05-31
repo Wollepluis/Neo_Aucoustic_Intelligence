@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 public class MainPageController {
@@ -15,7 +18,10 @@ public class MainPageController {
     private Button button_logoutDropdown;
 
     @FXML
-    private Button button_showSidebar;
+    private Label label_title;
+
+    @FXML
+    private ImageView button_showSidebar;
 
     @FXML
     private AnchorPane sidebar;
@@ -34,15 +40,18 @@ public class MainPageController {
     }
 
     @FXML
-    void showSidebar(ActionEvent event) {
+    void showSidebar(MouseEvent event) {
 
         if (sidebar.isVisible()) {
             sidebar.setVisible(false);
             txt_promptField.setPrefWidth(680);
+            label_title.setLayoutX(294);
+
         }
         else {
             sidebar.setVisible(true);
             txt_promptField.setPrefWidth(490);
+            label_title.setLayoutX(384);
         }
     }
 

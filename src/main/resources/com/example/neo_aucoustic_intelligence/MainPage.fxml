@@ -26,7 +26,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label layoutX="388.0" layoutY="36.0" prefHeight="30.0" prefWidth="240.0" stylesheets="@style.css" text="Aucoustic Intelligence" textFill="WHITE" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="30.0">
+      <Label fx:id="label_title" layoutX="384.0" layoutY="36.0" prefHeight="30.0" prefWidth="234.0" stylesheets="@style.css" text="Aucoustic Intelligence" textFill="WHITE" AnchorPane.topAnchor="30.0">
          <font>
             <Font name="SuiGenerisRg-Regular" size="19.0" />
          </font>
@@ -45,14 +45,10 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="button_showSidebar" mnemonicParsing="false" onAction="#showSidebar" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #1d1d1d;" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
-         <graphic>
-            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Rectangle_1.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
+      <ImageView fx:id="button_showSidebar" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#showSidebar" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <image>
+            <Image url="@Rectangle_1.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
