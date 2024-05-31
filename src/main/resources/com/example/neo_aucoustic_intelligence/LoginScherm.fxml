@@ -10,8 +10,7 @@
         <TextField fx:id="gebruikersNaamInput" layoutX="200.0" layoutY="227.0" prefHeight="26.0" prefWidth="412.0" promptText="Vul hier uw gebruikersnaam in" stylesheets="@style.css" />
         <PasswordField fx:id="wachtwoordInput" layoutX="200.0" layoutY="273.0" prefHeight="26.0" prefWidth="412.0" promptText="Vul hier uw gebruikersnaam in" />
         <Button fx:id="loginButton" layoutX="358.0" layoutY="313.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#naarMain" prefHeight="20.0" prefWidth="64.0" style="-fx-font-size: 10; -fx-background-color: #383838; -fx-font-style: #383838;" text="Login" textFill="WHITE" />
-        <TextField fx:id="errorText" layoutX="176.0" layoutY="222.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="245.0" style="-fx-font-size: 10; -fx-text-fill: red; visibility: false;" text="Gebruikersnaam en wachtwoord komen niet overeen" />
-      <TextField layoutX="267.0" layoutY="342.0" prefHeight="26.0" prefWidth="246.0" style="-fx-font-size: 10; -fx-text-fill: red; -fx-background-color: #1D1D1D;" text="Gebruikersnaam en wachtwoord komen niet overeen" />
-      <TextField layoutX="173.0" layoutY="135.0" prefHeight="86.0" prefWidth="434.0" style="-fx-font-size: 40; -fx-background-color: #1D1D1D; -fx-text-fill: white;" text="Aucoustic Intelligence" />
+      <TextField fx:id="errorText" disable="true" layoutX="267.0" layoutY="342.0" opacity="0.0" prefHeight="26.0" prefWidth="246.0" style="-fx-font-size: 10; -fx-text-fill: red; -fx-background-color: #1D1D1D;" text="Gebruikersnaam en wachtwoord komen niet overeen" />
+      <TextField fx:id="titelText" layoutX="173.0" layoutY="135.0" prefHeight="86.0" prefWidth="434.0" style="-fx-font-size: 40; -fx-background-color: #1D1D1D; -fx-text-fill: white;" text="Aucoustic Intelligence" />
     </children>
 </AnchorPane>

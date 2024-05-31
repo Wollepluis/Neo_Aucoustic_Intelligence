@@ -22,6 +22,9 @@ public class LoginSchermController {
     public Button loginButton;
 
     @FXML
+    public TextField titelText;
+
+    @FXML
     public PasswordField wachtwoordInput;
 
     @FXML
