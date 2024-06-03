@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Added Chat">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented EventListener tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -27,18 +31,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;DerksenLucas&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "HHSWilliam"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git&quot;,
-    &quot;accountId&quot;: &quot;93820e94-d9a9-467d-a3d9-4039f6aa7de5&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git",
+    "accountId": "0cb2ced7-f498-45f8-bd85-7bcf9f524a47"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -48,37 +52,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Chat&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lucas/Documents/GitHub/Neo_Aucoustic_Intelligence&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "JUnit.All in Neo_Aucoustic_Intelligence.executor": "Run",
+    "JUnit.EventHandlerTests.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Events",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lucas\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
+      <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
     </key>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
-      </set>
-    </attachedChunks>
+  <component name="RunManager" selected="JUnit.All in Neo_Aucoustic_Intelligence">
+    <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Neo_Aucoustic_Intelligence" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventHandlerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Neo_Aucoustic_Intelligence" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="events.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="events" />
+      <option name="MAIN_CLASS_NAME" value="events.EventHandlerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
+        <item itemvalue="JUnit.EventHandlerTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,30 +110,97 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716800589756</updated>
-      <workItem from="1716801486329" duration="296000" />
-      <workItem from="1716801874305" duration="58000" />
-      <workItem from="1716802351292" duration="437000" />
-      <workItem from="1716802890911" duration="814000" />
-      <workItem from="1716804037484" duration="1867000" />
-      <workItem from="1716806017394" duration="12000" />
-      <workItem from="1717065138409" duration="1620000" />
     </task>
-    <task id="LOCAL-00001" summary="Added Chat">
+    <task id="LOCAL-00001" summary="Updated .gitignore">
       <option name="closed" value="true" />
-      <created>1716804208661</created>
+      <created>1717065379460</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1716804208661</updated>
+      <updated>1717065379460</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added &quot;tests&quot; folder">
+      <option name="closed" value="true" />
+      <created>1717065587132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717065587132</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added classes for events">
+      <option name="closed" value="true" />
+      <created>1717066152684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717066152684</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implemented the event related classes">
+      <option name="closed" value="true" />
+      <created>1717067222244</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717067222244</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implemented a test testcase">
+      <option name="closed" value="true" />
+      <created>1717068039468</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717068039468</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented EventHandler tests and updated the EventHandler">
+      <option name="closed" value="true" />
+      <created>1717071365716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071365716</updated>
+    </task>
+    <task id="LOCAL-00007" summary="implemented EventListener tests">
+      <option name="closed" value="true" />
+      <created>1717072141568</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717072141568</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Events" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Chat" />
+    <MESSAGE value="Updated .gitignore" />
+    <MESSAGE value="Added &quot;tests&quot; folder" />
+    <MESSAGE value="Added classes for events" />
+    <MESSAGE value="implemented the event related classes" />
+    <MESSAGE value="implemented a test testcase" />
+    <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
+    <MESSAGE value="implemented EventListener tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented EventListener tests" />
   </component>
 </project>
