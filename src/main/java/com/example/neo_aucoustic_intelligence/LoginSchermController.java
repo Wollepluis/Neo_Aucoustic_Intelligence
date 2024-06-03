@@ -13,19 +13,19 @@ public class LoginSchermController {
 
 
     @FXML
-    public AnchorPane Background;
+    private AnchorPane Background;
 
     @FXML
-    public TextField errorText;
+    private TextField errorText;
 
     @FXML
-    public TextField gebruikersNaamInput;
+    private TextField gebruikersNaamInput;
 
     @FXML
-    public Button loginButton;
+    private Button loginButton;
 
     @FXML
-    public TextField titelText;
+    private TextField titelText;
 
     @FXML
     public PasswordField wachtwoordInput;
@@ -35,9 +35,10 @@ public class LoginSchermController {
         String hoi = gebruikersNaamInput.getText();
         System.out.println(hoi);
         Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
-        login.inloggen();
-        errorText.setDisable(false);
-        errorText.opacityProperty().set(1);
+        if (login.inloggen()) {
+            errorText.setDisable(false);
+            errorText.opacityProperty().set(1);
+        }
     }
 
 }

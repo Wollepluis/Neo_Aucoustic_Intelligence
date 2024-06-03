@@ -21,7 +21,7 @@ public class Login {
         gebruikers.put(gebruiker.getGebruikersNaam(), gebruiker.getWachtwoord());
     }
 
-    public void inloggen(){
+    public boolean inloggen(){
         gebruikers.put("Morris", "M123");
         System.out.println("test");
         System.out.println(gebruikersnaam);
@@ -30,12 +30,11 @@ public class Login {
             System.out.println("Jaaaaa");
             ingelogdStatus = true;
             //ga naar de main menu
+            return false;
         }
         else {
-            //laat zien dat het wachtwoord en gebruikersnaam niet overeen komen
-            return;
+            return true;
         }
-        System.out.println(2);
     }
     public void uitloggen(){
         ingelogdStatus = false;

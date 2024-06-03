@@ -12,6 +12,14 @@ public class Gebruiker {
         return gebruikersNaam;
     }
 
+    public void setWachtwoord(String wachtwoord) {
+        this.wachtwoord = wachtwoord;
+    }
+
+    public void setGebruikersNaam(String gebruikersNaam) {
+        this.gebruikersNaam = gebruikersNaam;
+    }
+
     public String getEmail() {
         return email;
     }
