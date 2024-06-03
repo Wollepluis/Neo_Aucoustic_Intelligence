@@ -4,7 +4,7 @@ import com.example.neo_aucoustic_intelligence.*;
 import java.util.HashMap;
 
 public class Login {
-    private boolean ingelogdStatus;
+    private static boolean ingelogdStatus;
     HashMap<String, String> gebruikers = new HashMap<String, String>();
     private String gebruikersnaam;
     private String wachtwoord;
@@ -17,6 +17,7 @@ public class Login {
     public boolean getIngelogdStatus(){
         return ingelogdStatus;
     }
+    public static void setIngelogdStatus(boolean newIngelogdStatus){ingelogdStatus = newIngelogdStatus;}
     public void voegGebruikertoe(Gebruiker gebruiker) {
         gebruikers.put(gebruiker.getGebruikersNaam(), gebruiker.getWachtwoord());
     }
