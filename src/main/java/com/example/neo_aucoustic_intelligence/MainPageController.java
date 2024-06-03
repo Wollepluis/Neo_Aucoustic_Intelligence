@@ -69,7 +69,7 @@ public class MainPageController {
 
     @FXML
     void uitloggen(MouseEvent event) {
-        
+        Login.setIngelogdStatus(false);
     }
 
     @FXML
