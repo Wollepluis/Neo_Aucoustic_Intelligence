@@ -32,8 +32,6 @@ public class LoginSchermController {
 
     @FXML
     void naarMain(ActionEvent event) {
-        String hoi = gebruikersNaamInput.getText();
-        System.out.println(hoi);
         Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
         if (login.inloggen()) {
             errorText.setDisable(false);

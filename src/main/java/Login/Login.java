@@ -24,11 +24,8 @@ public class Login {
 
     public boolean inloggen(){
         gebruikers.put("Morris", "M123");
-        System.out.println("test");
-        System.out.println(gebruikersnaam);
 
         if (gebruikers.get(gebruikersnaam).equals(wachtwoord)) {
-            System.out.println("Jaaaaa");
             ingelogdStatus = true;
             //ga naar de main menu
             return false;
