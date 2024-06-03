@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Updated .gitignore">
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Login2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -30,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git&quot;,
-    &quot;accountId&quot;: &quot;93820e94-d9a9-467d-a3d9-4039f6aa7de5&quot;
+    &quot;accountId&quot;: &quot;0cb2ced7-f498-45f8-bd85-7bcf9f524a47&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -45,26 +53,55 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Neo_Aucoustic_Intelligence.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EventHandlerTests.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;GUI__Chat&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Login2&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mark2/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/melle/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.25747126&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
 }</component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Neo_Aucoustic_Intelligence">
+    <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Neo_Aucoustic_Intelligence" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventHandlerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Neo_Aucoustic_Intelligence" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="events.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="events" />
+      <option name="MAIN_CLASS_NAME" value="events.EventHandlerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
+        <item itemvalue="JUnit.EventHandlerTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,7 +111,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716800589756</updated>
-      <workItem from="1717144564003" duration="2011000" />
     </task>
     <task id="LOCAL-00001" summary="Updated .gitignore">
       <option name="closed" value="true" />
@@ -84,18 +120,147 @@
       <option name="project" value="LOCAL" />
       <updated>1717065379460</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added &quot;tests&quot; folder">
+      <option name="closed" value="true" />
+      <created>1717065587132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717065587132</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added classes for events">
+      <option name="closed" value="true" />
+      <created>1717066152684</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717066152684</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implemented the event related classes">
+      <option name="closed" value="true" />
+      <created>1717067222244</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717067222244</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implemented a test testcase">
+      <option name="closed" value="true" />
+      <created>1717068039468</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717068039468</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented EventHandler tests and updated the EventHandler">
+      <option name="closed" value="true" />
+      <created>1717071365716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071365716</updated>
+    </task>
+    <task id="LOCAL-00007" summary="implemented EventListener tests">
+      <option name="closed" value="true" />
+      <created>1717072141568</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717072141568</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Login2">
+      <option name="closed" value="true" />
+      <created>1717074851250</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717074851250</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Login2">
+      <option name="closed" value="true" />
+      <created>1717140091751</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717140091751</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Login2">
+      <option name="closed" value="true" />
+      <created>1717140452989</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717140452989</updated>
+    </task>
+    <task id="LOCAL-00011" summary="pluh">
+      <option name="closed" value="true" />
+      <created>1717142997026</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717142997026</updated>
+    </task>
+    <task id="LOCAL-00012" summary="login2">
+      <option name="closed" value="true" />
+      <created>1717143595956</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717143595956</updated>
+    </task>
+    <task id="LOCAL-00013" summary="login2">
+      <option name="closed" value="true" />
+      <created>1717143800882</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717143800882</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Login2">
+      <option name="closed" value="true" />
+      <created>1717148536312</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717148536312</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Login2">
+      <option name="closed" value="true" />
+      <created>1717148724610</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717148724610</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Login2">
+      <option name="closed" value="true" />
+      <created>1717404999284</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717404999284</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Events" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -103,6 +268,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated .gitignore" />
+    <MESSAGE value="Added &quot;tests&quot; folder" />
+    <MESSAGE value="Added classes for events" />
+    <MESSAGE value="implemented the event related classes" />
+    <MESSAGE value="implemented a test testcase" />
+    <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
+    <MESSAGE value="implemented EventListener tests" />
+    <MESSAGE value="pluh" />
+    <MESSAGE value="login2" />
+    <MESSAGE value="Login2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
