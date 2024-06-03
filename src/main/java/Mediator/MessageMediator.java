@@ -1,3 +1,5 @@
+package Mediator;
+
 import events.EventHandler;
 
 public final class MessageMediator {
