@@ -14,7 +14,7 @@ public class Login {
         this.wachtwoord = wachtwoord;
     }
 
-    public boolean getIngelogdStatus(){
+    public static boolean getIngelogdStatus(){
         return ingelogdStatus;
     }
     public static void setIngelogdStatus(boolean newIngelogdStatus){ingelogdStatus = newIngelogdStatus;}
