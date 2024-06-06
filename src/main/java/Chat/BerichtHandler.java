@@ -2,7 +2,7 @@ package Chat;
 
 import Mediator.MessageMediator;
 import events.EventArgs;
-import events.IEventListener;
+import messageMediator.BerichtEventArgs;
 
 public class BerichtHandler {
 
@@ -16,10 +16,15 @@ public class BerichtHandler {
     }
 
     private void opBerichtOntvangen(Object sender, EventArgs args){
+        if (!(args instanceof BerichtEventArgs)){
+            return;
+        }
+        BerichtEventArgs berichtArgs = (BerichtEventArgs) args;
+        ChatManager.getInstance().getChat(berichtArgs.chatID).voegBerichtToe(berichtArgs.bericht);
     }
 
     private void opBerichtVerstuurd(Object sender, EventArgs args){
-
+        MessageMediator.krijgInstantie().opBerichtVerstuurd.invoke(sender, args);
     }
 
     private BerichtHandler(){
