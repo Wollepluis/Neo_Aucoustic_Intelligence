@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Implemented Message Mediator">
-      <change beforePath="$PROJECT_DIR$/src/main/java/messageMediator/BerichtEventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messageMediator/BerichtEventArgs.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented EventListener tests">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_39__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_11_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_11_28__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30-5-2024_14_51__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_30-5-2024_14_51__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_11__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_45__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MessageMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mediator/MessageMediator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Chat" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,20 +57,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in Neo_Aucoustic_Intelligence.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EventHandlerTests.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Message-Mediator&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "JUnit.All in Neo_Aucoustic_Intelligence.executor": "Run",
+    "JUnit.EventHandlerTests.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Chat",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
@@ -94,8 +102,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
-        <item itemvalue="JUnit.EventHandlerTests" />
         <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
         <item itemvalue="JUnit.EventHandlerTests" />
       </list>
@@ -166,41 +172,18 @@
       <option name="project" value="LOCAL" />
       <updated>1717072141568</updated>
     </task>
-    <task id="LOCAL-00008" summary="Added Message Mediator Module">
+    <task id="LOCAL-00008" summary="Updating the BerichtHandler">
       <option name="closed" value="true" />
-      <created>1717152487008</created>
+      <created>1717410033799</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1717152487008</updated>
+      <updated>1717410033799</updated>
     </task>
-    <task id="LOCAL-00009" summary="Implemented Message Mediator">
-      <option name="closed" value="true" />
-      <created>1717153877620</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1717153877620</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/Events" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -231,8 +214,7 @@
     <MESSAGE value="implemented a test testcase" />
     <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
     <MESSAGE value="implemented EventListener tests" />
-    <MESSAGE value="Added Message Mediator Module" />
-    <MESSAGE value="Implemented Message Mediator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Message Mediator" />
+    <MESSAGE value="Updating the BerichtHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the BerichtHandler" />
   </component>
 </project>
