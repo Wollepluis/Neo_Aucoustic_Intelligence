@@ -27,11 +27,10 @@ public class Login {
 
         if (gebruikers.get(gebruikersnaam).equals(wachtwoord)) {
             ingelogdStatus = true;
-            //ga naar de main menu
-            return false;
+            return true;
         }
         else {
-            return true;
+            return false;
         }
     }
     public void uitloggen(){

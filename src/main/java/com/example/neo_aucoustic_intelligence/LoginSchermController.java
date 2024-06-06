@@ -36,7 +36,9 @@ public class LoginSchermController {
     @FXML
     void naarMain(ActionEvent event) throws IOException {
         Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
+        System.out.println("test1");
         if (login.inloggen()) {
+            System.out.println("test2");
             errorText.setDisable(false);
             errorText.opacityProperty().set(1);
             SceneManager.switchScene();

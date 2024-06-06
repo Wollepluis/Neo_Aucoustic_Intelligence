@@ -13,16 +13,14 @@ public final class SceneManager {
     private static SceneManager instance;
 
     public static void switchScene() throws IOException {
-        if (Login.getIngelogdStatus()) {
+        Stage stage = new Stage();
+            System.out.println("test");
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MainPage.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             stage.setTitle("Main Page");
-        }
-        else if (!Login.getIngelogdStatus()) {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LoginScherm.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-            stage.setTitle("Main Page");
-        }
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
     }
 
     public static SceneManager getInstance() {
