@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented EventListener tests">
-      <change beforePath="$PROJECT_DIR$/src/main/java/messageMediator/BerichtEventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messageMediator/BerichtEventArgs.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="workspace.xnl">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/Bericht.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/Bericht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +174,39 @@
       <option name="project" value="LOCAL" />
       <updated>1717410033799</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merged Chat onto Message-Mediator">
+      <option name="closed" value="true" />
+      <created>1717671521242</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717671521242</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Made the events public">
+      <option name="closed" value="true" />
+      <created>1717671702245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717671702245</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Made the events public">
+      <option name="closed" value="true" />
+      <created>1717671730375</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717671730375</updated>
+    </task>
+    <task id="LOCAL-00012" summary="workspace.xnl">
+      <option name="closed" value="true" />
+      <created>1717672314213</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717672314213</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +241,9 @@
     <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
     <MESSAGE value="implemented EventListener tests" />
     <MESSAGE value="Updating the BerichtHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating the BerichtHandler" />
+    <MESSAGE value="Merged Chat onto Message-Mediator" />
+    <MESSAGE value="Made the events public" />
+    <MESSAGE value="workspace.xnl" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xnl" />
   </component>
 </project>

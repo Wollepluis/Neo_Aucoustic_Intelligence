@@ -15,12 +15,4 @@ public class MessageMediator {
         }
         return Instance;
     }
-
-    public void opBerichtOntvangen(Object sender, EventArgs args){
-        berichtOntvangen.invoke(sender, args);
-    }
-
-    public void opBerichtVerstuurd(Object sender, EventArgs args){
-        berichtVerstuurd.invoke(sender, args);
-    }
 }
