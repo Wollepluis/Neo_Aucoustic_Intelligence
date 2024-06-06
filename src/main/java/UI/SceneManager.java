@@ -9,20 +9,23 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public final class SceneManager {
-    public static Stage stage = new Stage();
+
+    private static Stage mainScherm;
     private static SceneManager instance;
 
     public static void switchScene() throws IOException {
-        Stage stage = new Stage();
-            System.out.println("test");
+        mainScherm = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MainPage.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-            stage.setTitle("Main Page");
-            stage.setScene(scene);
-            stage.setResizable(false);
-            stage.show();
+            mainScherm.setTitle("Main Page");
+            mainScherm.setScene(scene);
+            mainScherm.setResizable(false);
+            mainScherm.show();
+            HelloApplication.getInlogScherm().hide();
     }
-
+    public static Stage getMainScherm() {
+        return mainScherm;
+    }
     public static SceneManager getInstance() {
         if (instance == null) {
             instance = new SceneManager();
