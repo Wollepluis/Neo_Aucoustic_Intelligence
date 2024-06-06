@@ -9,6 +9,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import Login.Login;
+import UI.*;
+import java.io.IOException;
 
 public class MainPageController {
 
@@ -68,8 +70,9 @@ public class MainPageController {
     }
 
     @FXML
-    void uitloggen(MouseEvent event) {
+    void uitloggen(MouseEvent event) throws IOException {
         Login.setIngelogdStatus(false);
+        SceneManager.switchScene();
     }
 
     @FXML
