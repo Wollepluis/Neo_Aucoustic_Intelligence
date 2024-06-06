@@ -18,7 +18,7 @@ public final class SceneManager {
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             stage.setTitle("Main Page");
         }
-        else if (!Login.getIngelogdStatus()) {
+        else {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LoginScherm.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 800, 600);
             stage.setTitle("Main Page");
