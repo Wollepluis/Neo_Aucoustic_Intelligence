@@ -20,7 +20,7 @@ public class BerichtHandler {
             return;
         }
         BerichtEventArgs berichtArgs = (BerichtEventArgs) args;
-        ChatManager.getInstance().getChat(berichtArgs.chatID).voegBerichtToe(berichtArgs.bericht);
+        //ChatManager.getInstance().getChat(berichtArgs.chatID).voegBerichtToe(berichtArgs.bericht);
     }
 
     private void opBerichtVerstuurd(Object sender, EventArgs args){
