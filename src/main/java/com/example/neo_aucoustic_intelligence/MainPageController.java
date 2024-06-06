@@ -11,6 +11,8 @@ import javafx.scene.layout.AnchorPane;
 import Login.Login;
 import UI.*;
 import java.io.IOException;
+import java.util.Scanner;
+
 import javafx.scene.Node;
 
 public class MainPageController {
@@ -51,6 +53,7 @@ public class MainPageController {
 
     @FXML
     void sendPrompt(ActionEvent event) {
+
 
     }
 
