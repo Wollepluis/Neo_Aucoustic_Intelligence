@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import Login.Login;
 import UI.*;
 import java.io.IOException;
+import javafx.scene.Node;
 
 public class MainPageController {
 
@@ -81,6 +82,37 @@ public class MainPageController {
     }
 
     @FXML
-    void setNewChat(MouseEvent event) {
+    private boolean isButtonAtPosition(double top, double left) {
+        for (Node node : sidebar.getChildren()) {
+            if (node instanceof Button) {
+                Double topAnchor = AnchorPane.getTopAnchor(node);
+                Double leftAnchor = AnchorPane.getLeftAnchor(node);
+                if (topAnchor != top && leftAnchor != left) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    @FXML
+    void setNewChat(MouseEvent event1) {
+        Button newButton = new Button("nog leeg"); //inhoud van button moet onderwerp zijn van de chat
+        newButton.setOnAction(event -> { //hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
+
+        });
+
+        // Set the button's position
+        for (Node node : sidebar.getChildren()) {
+            double top = 75.0;
+            if (isButtonAtPosition(top, 74.0)) {
+                top = top + 43.0;
+            }
+            else {
+                AnchorPane.setTopAnchor(newButton, top);
+                AnchorPane.setLeftAnchor(newButton, 74.0);
+            }
+        }
+        sidebar.getChildren().add(newButton);
     }
 }

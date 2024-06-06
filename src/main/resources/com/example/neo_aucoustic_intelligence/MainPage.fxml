@@ -12,8 +12,8 @@
    <children>
       <AnchorPane fx:id="sidebar" layoutY="7.0" prefHeight="393.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button layoutX="56.0" layoutY="121.0" mnemonicParsing="false" text="Button" />
-            <Button layoutX="56.0" layoutY="214.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="14.0" layoutY="77.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="14.0" layoutY="125.0" mnemonicParsing="false" text="Button" />
             <Button layoutX="56.0" layoutY="275.0" mnemonicParsing="false" text="Button" />
             <ImageView fx:id="newChat" fitHeight="40.0" fitWidth="56.0" layoutX="146.0" layoutY="14.0" onMouseClicked="#setNewChat" pickOnBounds="true" preserveRatio="true">
                <image>
