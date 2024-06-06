@@ -5,8 +5,8 @@ import events.EventHandler;
 
 public class MessageMediator {
     private static MessageMediator Instance;
-    private final EventHandler berichtOntvangen = new EventHandler();
-    private final EventHandler berichtVerstuurd = new EventHandler();
+    public final EventHandler berichtOntvangen = new EventHandler();
+    public final EventHandler berichtVerstuurd = new EventHandler();
 
 
     public static MessageMediator krijgInstance(){
