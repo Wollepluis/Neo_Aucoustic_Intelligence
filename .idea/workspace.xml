@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Updated BerichtHandler">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="workspace.xnl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/ChatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/ChatManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,39 +51,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "JUnit.All in Neo_Aucoustic_Intelligence.executor": "Run",
-    "JUnit.EventHandlerTests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Message-Mediator",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Neo_Aucoustic_Intelligence.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EventHandlerTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Message-Mediator&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Neo_Aucoustic_Intelligence" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Neo_Aucoustic_Intelligence" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,15 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
-      <item itemvalue="JUnit.EventHandlerTests" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EventHandlerTests" />
-        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
         <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
         <item itemvalue="JUnit.EventHandlerTests" />
       </list>
@@ -224,15 +206,7 @@
       <option name="project" value="LOCAL" />
       <updated>1717672314213</updated>
     </task>
-    <task id="LOCAL-00013" summary="Updated BerichtHandler">
-      <option name="closed" value="true" />
-      <created>1717673461534</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1717673461534</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +244,6 @@
     <MESSAGE value="Merged Chat onto Message-Mediator" />
     <MESSAGE value="Made the events public" />
     <MESSAGE value="workspace.xnl" />
-    <MESSAGE value="Updated BerichtHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated BerichtHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xnl" />
   </component>
 </project>
