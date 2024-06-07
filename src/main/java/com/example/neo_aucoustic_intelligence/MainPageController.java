@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -37,13 +38,20 @@ public class MainPageController {
     private ImageView newChat;
 
     @FXML
+    private ScrollPane scrollpane;
+
+    @FXML
     private AnchorPane sidebar;
+
+    @FXML
+    private AnchorPane sidebar_chat;
 
     @FXML
     private TextField txt_promptField;
 
     @FXML
     private Button uitlogKnop;
+
 
     @FXML
     void logoutDropdown(ActionEvent event) {
@@ -68,19 +76,20 @@ public class MainPageController {
 
         if (sidebar.isVisible()) {
             sidebar.setVisible(false);
+            scrollpane.setVisible(false);
             txt_promptField.setPrefWidth(680);
             label_title.setLayoutX(294);
 
         }
         else {
             sidebar.setVisible(true);
+            scrollpane.setVisible(true);
             txt_promptField.setPrefWidth(490);
             label_title.setLayoutX(384);
         }
     }
 
     @FXML
-
     void uitloggen(MouseEvent event) throws IOException {
         Login.setIngelogdStatus(false);
         SceneManager.switchScene();
@@ -99,12 +108,12 @@ public class MainPageController {
         });
 
         // Set the button's position
-        double top = 32.0;
-        for (Node node : sidebar.getChildren()) {
+        double top = 10.0;
+        for (Node node : sidebar_chat.getChildren()) {
             top = top + 43.0;
         }
         AnchorPane.setTopAnchor(newButton, top);
-        AnchorPane.setLeftAnchor(newButton, 74.0);
-        sidebar.getChildren().add(newButton);
+        AnchorPane.setLeftAnchor(newButton, 67.0);
+        sidebar_chat.getChildren().add(newButton);
     }
 }
