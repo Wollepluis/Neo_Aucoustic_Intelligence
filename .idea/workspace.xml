@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Mockup AI gemaakt">
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Deleted Branches">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mockupAI/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mockupAI/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mockupAI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mockupAI/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/BerichtHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chat/ChatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chat/ChatManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mediator/MessageMediator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/EventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Events/EventArgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Events/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/IEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Events/IEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messageMediator/BerichtEventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MessageMediator/BerichtEventArgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/messageMediator/MessageMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MessageMediator/MessageMediator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/Events/EventHandlerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/Events/EventListenerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/Events/EventListenerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,14 +29,13 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Chat" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,7 +49,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git&quot;,
-    &quot;accountId&quot;: &quot;f6a48e7f-0b36-45a1-9752-4d42e6c6ea57&quot;
+    &quot;accountId&quot;: &quot;0cb2ced7-f498-45f8-bd85-7bcf9f524a47&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -60,11 +69,12 @@
     &quot;JUnit.EventHandlerTests.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Mockup-AI&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -74,14 +84,8 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mockupAI.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Neo_Aucoustic_Intelligence" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mockupAI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,24 +102,27 @@
       <module name="Neo_Aucoustic_Intelligence" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="events.*" />
+          <option name="PATTERN" value="Events.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="events" />
-      <option name="MAIN_CLASS_NAME" value="events.EventHandlerTests" />
+      <option name="MAIN_CLASS_NAME" value="Events.EventHandlerTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
+      <item itemvalue="JUnit.EventHandlerTests" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
         <item itemvalue="JUnit.EventHandlerTests" />
-        <item itemvalue="JUnit.EventHandlerTests" />
-        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
       </list>
     </recent_temporary>
   </component>
@@ -184,23 +191,79 @@
       <option name="project" value="LOCAL" />
       <updated>1717072141568</updated>
     </task>
-    <task id="LOCAL-00008" summary="initial Commit">
+    <task id="LOCAL-00008" summary="Updating the BerichtHandler">
       <option name="closed" value="true" />
-      <created>1717405464561</created>
+      <created>1717410033799</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1717405464561</updated>
+      <updated>1717410033799</updated>
     </task>
-    <task id="LOCAL-00009" summary="Mockup AI gemaakt">
+    <task id="LOCAL-00009" summary="Merged Chat onto Message-Mediator">
       <option name="closed" value="true" />
-      <created>1717676403103</created>
+      <created>1717671521242</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1717676403103</updated>
+      <updated>1717671521242</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made the events public">
+      <option name="closed" value="true" />
+      <created>1717671702245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717671702245</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Made the events public">
+      <option name="closed" value="true" />
+      <created>1717671730375</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717671730375</updated>
+    </task>
+    <task id="LOCAL-00012" summary="workspace.xnl">
+      <option name="closed" value="true" />
+      <created>1717672314213</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717672314213</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated berichtHandler">
+      <option name="closed" value="true" />
+      <created>1717676612149</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717676612149</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Merged MessageMediator onto Main">
+      <option name="closed" value="true" />
+      <created>1717676880983</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717676880983</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merged MessageMediator onto Main">
+      <option name="closed" value="true" />
+      <created>1717744773088</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717744773088</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Deleted Branches">
+      <option name="closed" value="true" />
+      <created>1717745013936</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717745013936</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +274,7 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="origin/Events" />
+                  <option value="main" />
                 </option>
               </RecentGroup>
             </list>
@@ -224,17 +287,12 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="MockupAI" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -254,8 +312,13 @@
     <MESSAGE value="implemented a test testcase" />
     <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
     <MESSAGE value="implemented EventListener tests" />
-    <MESSAGE value="initial Commit" />
-    <MESSAGE value="Mockup AI gemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mockup AI gemaakt" />
+    <MESSAGE value="Updating the BerichtHandler" />
+    <MESSAGE value="Merged Chat onto Message-Mediator" />
+    <MESSAGE value="Made the events public" />
+    <MESSAGE value="workspace.xnl" />
+    <MESSAGE value="Updated berichtHandler" />
+    <MESSAGE value="Merged MessageMediator onto Main" />
+    <MESSAGE value="Deleted Branches" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted Branches" />
   </component>
 </project>

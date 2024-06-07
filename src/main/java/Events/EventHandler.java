@@ -1,8 +1,8 @@
-package events;
+package Events;
 
 import java.util.ArrayList;
 
-public class EventHandler {
+public class EventHandler{
     private final ArrayList<IEventListener> listeners = new ArrayList<>();
 
     public void subscribe(IEventListener listener){

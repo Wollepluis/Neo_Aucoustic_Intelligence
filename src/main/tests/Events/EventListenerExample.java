@@ -1,4 +1,4 @@
-package events;
+package Events;
 
 // Example class for test cases
 public class EventListenerExample {
