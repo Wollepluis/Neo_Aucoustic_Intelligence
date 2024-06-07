@@ -1,4 +1,4 @@
-module com.example.neo_aucoustic_intelligence {
+module java.com.example.neo_aucoustic_intelligence {
     requires javafx.controls;
     requires javafx.fxml;
 
