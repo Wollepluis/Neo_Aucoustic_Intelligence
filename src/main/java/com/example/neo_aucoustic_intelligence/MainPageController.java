@@ -1,5 +1,7 @@
 package com.example.neo_aucoustic_intelligence;
 
+import Chat.Bericht;
+import Chat.BerichtHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -14,6 +16,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import javafx.scene.Node;
+import messageMediator.BerichtEventArgs;
+import messageMediator.MessageMediator;
 
 public class MainPageController {
 
@@ -49,13 +53,14 @@ public class MainPageController {
         else {
             uitlogKnop.setVisible(true);
         }
-
     }
 
     @FXML
     void sendPrompt(ActionEvent event) {
-
-
+        BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
+        // berichtEventArgs.chatID = ;
+        berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
+        MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
     }
 
     @FXML
@@ -75,6 +80,7 @@ public class MainPageController {
     }
 
     @FXML
+
     void uitloggen(MouseEvent event) throws IOException {
         Login.setIngelogdStatus(false);
         SceneManager.switchScene();
