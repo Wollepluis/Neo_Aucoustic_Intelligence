@@ -49,6 +49,7 @@ public class MainPageController {
         else {
             uitlogKnop.setVisible(true);
         }
+
     }
 
     @FXML
