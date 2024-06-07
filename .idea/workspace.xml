@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="commit voor de merge" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="implemented EventListener tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventHandlerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/tests/events/EventListenerTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,23 +26,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="871334630486c215e7be44e56137eef77ae2dbb0" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;HHSWilliam&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "HHSWilliam"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git&quot;,
-    &quot;accountId&quot;: &quot;93820e94-d9a9-467d-a3d9-4039f6aa7de5&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git",
+    "accountId": "0cb2ced7-f498-45f8-bd85-7bcf9f524a47"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -54,19 +59,11 @@
     "JUnit.EventHandlerTests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UI-mainmenu",
-    "ignore.virus.scanning.warn.message": "true",
+    "git-widget-placeholder": "Events",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/melle/AppData/Local/SceneBuilder/SceneBuilder.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.25747126",
-    "settings.editor.selected.configurable": "preferences.JavaFX",
-    "vue.rearranger.settings.migration": "true"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,20 +71,7 @@
       <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.neo_aucoustic_intelligence.HelloApplication" />
-      <module name="Neo_Aucoustic_Intelligence" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.neo_aucoustic_intelligence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.All in Neo_Aucoustic_Intelligence">
     <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Neo_Aucoustic_Intelligence" />
       <option name="PACKAGE_NAME" value="" />
@@ -113,19 +97,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
         <item itemvalue="JUnit.EventHandlerTests" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -135,8 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716800589756</updated>
-      <workItem from="1717451798072" duration="9000" />
-      <workItem from="1717669187925" duration="766000" />
     </task>
     <task id="LOCAL-00001" summary="Updated .gitignore">
       <option name="closed" value="true" />
@@ -194,147 +167,8 @@
       <option name="project" value="LOCAL" />
       <updated>1717072141568</updated>
     </task>
-    <task id="LOCAL-00008" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717074851250</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1717074851250</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717140091751</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1717140091751</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717140452989</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1717140452989</updated>
-    </task>
-    <task id="LOCAL-00011" summary="pluh">
-      <option name="closed" value="true" />
-      <created>1717142997026</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1717142997026</updated>
-    </task>
-    <task id="LOCAL-00012" summary="login2">
-      <option name="closed" value="true" />
-      <created>1717143595956</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1717143595956</updated>
-    </task>
-    <task id="LOCAL-00013" summary="login2">
-      <option name="closed" value="true" />
-      <created>1717143800882</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1717143800882</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717148536312</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1717148536312</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717148724610</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1717148724610</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717404999284</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1717404999284</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717672851600</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1717672851600</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717674300245</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1717674300245</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717674312525</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1717674312525</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717674897751</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1717674897751</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Login2">
-      <option name="closed" value="true" />
-      <created>1717676925863</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1717676925863</updated>
-    </task>
-    <task id="LOCAL-00022" summary="commit">
-      <option name="closed" value="true" />
-      <created>1717745529250</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1717745529250</updated>
-    </task>
-    <task id="LOCAL-00023" summary="commit voor de merge">
-      <option name="closed" value="true" />
-      <created>1717745707850</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1717745707850</updated>
-    </task>
-    <task id="LOCAL-00024" summary="commit voor de merge">
-      <option name="closed" value="true" />
-      <created>1717745892881</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1717745892881</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="8" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -367,15 +201,6 @@
     <MESSAGE value="implemented a test testcase" />
     <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
     <MESSAGE value="implemented EventListener tests" />
-    <MESSAGE value="pluh" />
-    <MESSAGE value="login2" />
-    <MESSAGE value="Login2" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="commit voor de merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit voor de merge" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented EventListener tests" />
   </component>
 </project>
