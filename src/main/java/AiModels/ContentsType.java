@@ -1,4 +1,4 @@
-package mockupAI;
+package AiModels;
 
 public enum ContentsType {
     GREETING
