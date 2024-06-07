@@ -92,20 +92,6 @@ public class MainPageController {
     }
 
     @FXML
-    private boolean isButtonAtPosition(double top, double left) {
-        for (Node node : sidebar.getChildren()) {
-            if (node instanceof Button) {
-                Double topAnchor = AnchorPane.getTopAnchor(node);
-                Double leftAnchor = AnchorPane.getLeftAnchor(node);
-                if (topAnchor != top && leftAnchor != left) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    @FXML
     void setNewChat(MouseEvent event1) {
         Button newButton = new Button("nog leeg"); //inhoud van button moet onderwerp zijn van de chat
         newButton.setOnAction(event -> { //hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
@@ -113,16 +99,12 @@ public class MainPageController {
         });
 
         // Set the button's position
+        double top = 32.0;
         for (Node node : sidebar.getChildren()) {
-            double top = 75.0;
-            if (isButtonAtPosition(top, 74.0)) {
-                top = top + 43.0;
-            }
-            else {
-                AnchorPane.setTopAnchor(newButton, top);
-                AnchorPane.setLeftAnchor(newButton, 74.0);
-            }
+            top = top + 43.0;
         }
+        AnchorPane.setTopAnchor(newButton, top);
+        AnchorPane.setLeftAnchor(newButton, 74.0);
         sidebar.getChildren().add(newButton);
     }
 }
