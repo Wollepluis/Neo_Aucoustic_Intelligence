@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="initial Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mockupAI/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mockupAI/ContentsType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mockupAI/Main.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Mockup AI gemaakt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mockupAI/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mockupAI/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mockupAI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mockupAI/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "JUnit.All in Neo_Aucoustic_Intelligence.executor": "Run",
-    "JUnit.EventHandlerTests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Mockup-AI",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Neo_Aucoustic_Intelligence.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EventHandlerTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Mockup-AI&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
@@ -192,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717405464561</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Mockup AI gemaakt">
+      <option name="closed" value="true" />
+      <created>1717676403103</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717676403103</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +255,7 @@
     <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
     <MESSAGE value="implemented EventListener tests" />
     <MESSAGE value="initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial Commit" />
+    <MESSAGE value="Mockup AI gemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mockup AI gemaakt" />
   </component>
 </project>
