@@ -1,8 +1,7 @@
 package Chat;
 
-import Mediator.MessageMediator;
-import events.EventArgs;
-import messageMediator.BerichtEventArgs;
+import Events.EventArgs;
+import MessageMediator.*;
 
 public class BerichtHandler {
 
