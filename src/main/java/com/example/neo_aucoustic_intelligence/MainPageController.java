@@ -105,7 +105,7 @@ public class MainPageController {
 
     @FXML
     void setNewChat(MouseEvent event1) {
-        Button newButton = new Button("nog leeg"); //inhoud van button moet onderwerp zijn van de chat
+        Button newButton = new Button("Voer onderwerp in"); //inhoud van button moet onderwerp zijn van de chat
         newButton.setOnAction(event -> { //hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
 
         });
