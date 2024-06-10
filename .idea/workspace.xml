@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Updated the AiModels">
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/MockupDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/MockupDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/LoginSchermController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/LoginSchermController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +15,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -28,23 +22,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Daataabees" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;HHSWilliam&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Wollepluis/Neo_Aucoustic_Intelligence.git&quot;,
-    &quot;accountId&quot;: &quot;0cb2ced7-f498-45f8-bd85-7bcf9f524a47&quot;
-  }
-}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -54,72 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "JUnit.All in Neo_Aucoustic_Intelligence.executor": "Run",
-    "JUnit.EventHandlerTests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "inloggenn",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Daataabees&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
-    </key>
-  </component>
+}</component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Database.Main" />
       <module name="Neo_Aucoustic_Intelligence" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Neo_Aucoustic_Intelligence" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EventHandlerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Neo_Aucoustic_Intelligence" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Events.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="events" />
-      <option name="MAIN_CLASS_NAME" value="Events.EventHandlerTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
-      <item itemvalue="JUnit.EventHandlerTests" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.EventHandlerTests" />
-        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -130,161 +65,34 @@
       <option name="presentableId" value="Default" />
       <updated>1716800589756</updated>
     </task>
-    <task id="LOCAL-00001" summary="Updated .gitignore">
+    <task id="LOCAL-00001" summary="tests">
       <option name="closed" value="true" />
-      <created>1717065379460</created>
+      <created>1716801380342</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1717065379460</updated>
+      <updated>1716801380342</updated>
     </task>
-    <task id="LOCAL-00002" summary="Added &quot;tests&quot; folder">
+    <task id="LOCAL-00002" summary="Alles importen">
       <option name="closed" value="true" />
-      <created>1717065587132</created>
+      <created>1716802028810</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1717065587132</updated>
+      <updated>1716802028810</updated>
     </task>
-    <task id="LOCAL-00003" summary="Added classes for events">
+    <task id="LOCAL-00003" summary="workspace.xml">
       <option name="closed" value="true" />
-      <created>1717066152684</created>
+      <created>1718014046109</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1717066152684</updated>
+      <updated>1718014046109</updated>
     </task>
-    <task id="LOCAL-00004" summary="implemented the event related classes">
-      <option name="closed" value="true" />
-      <created>1717067222244</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1717067222244</updated>
-    </task>
-    <task id="LOCAL-00005" summary="implemented a test testcase">
-      <option name="closed" value="true" />
-      <created>1717068039468</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1717068039468</updated>
-    </task>
-    <task id="LOCAL-00006" summary="implemented EventHandler tests and updated the EventHandler">
-      <option name="closed" value="true" />
-      <created>1717071365716</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1717071365716</updated>
-    </task>
-    <task id="LOCAL-00007" summary="implemented EventListener tests">
-      <option name="closed" value="true" />
-      <created>1717072141568</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1717072141568</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Updating the BerichtHandler">
-      <option name="closed" value="true" />
-      <created>1717410033799</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1717410033799</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Merged Chat onto Message-Mediator">
-      <option name="closed" value="true" />
-      <created>1717671521242</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1717671521242</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Made the events public">
-      <option name="closed" value="true" />
-      <created>1717671702245</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1717671702245</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Made the events public">
-      <option name="closed" value="true" />
-      <created>1717671730375</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1717671730375</updated>
-    </task>
-    <task id="LOCAL-00012" summary="workspace.xnl">
-      <option name="closed" value="true" />
-      <created>1717672314213</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1717672314213</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Updated berichtHandler">
-      <option name="closed" value="true" />
-      <created>1717676612149</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1717676612149</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Merged MessageMediator onto Main">
-      <option name="closed" value="true" />
-      <created>1717676880983</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1717676880983</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Merged MessageMediator onto Main">
-      <option name="closed" value="true" />
-      <created>1717744773088</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1717744773088</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Deleted Branches">
-      <option name="closed" value="true" />
-      <created>1717745013936</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1717745013936</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Updated the AiModels">
-      <option name="closed" value="true" />
-      <created>1717750847530</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1717750847530</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="main" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -295,7 +103,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="Daataabees" />
                       </list>
                     </value>
                   </entry>
@@ -308,21 +116,29 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated .gitignore" />
-    <MESSAGE value="Added &quot;tests&quot; folder" />
-    <MESSAGE value="Added classes for events" />
-    <MESSAGE value="implemented the event related classes" />
-    <MESSAGE value="implemented a test testcase" />
-    <MESSAGE value="implemented EventHandler tests and updated the EventHandler" />
-    <MESSAGE value="implemented EventListener tests" />
-    <MESSAGE value="Updating the BerichtHandler" />
-    <MESSAGE value="Merged Chat onto Message-Mediator" />
-    <MESSAGE value="Made the events public" />
-    <MESSAGE value="workspace.xnl" />
-    <MESSAGE value="Updated berichtHandler" />
-    <MESSAGE value="Merged MessageMediator onto Main" />
-    <MESSAGE value="Deleted Branches" />
-    <MESSAGE value="Updated the AiModels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the AiModels" />
+    <MESSAGE value="tests" />
+    <MESSAGE value="Alles importen" />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Database/DataObject.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Database/DataObject.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
