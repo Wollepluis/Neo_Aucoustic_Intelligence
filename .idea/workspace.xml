@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="merge doet het">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_39_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_39__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3-6-2024_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_11_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_11__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_45_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31-5-2024_11_45__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/MainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/MainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,28 +61,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "JUnit.All in Neo_Aucoustic_Intelligence.executor": "Run",
-    "JUnit.EventHandlerTests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UI-mainmenu",
-    "kotlin-language-version-configured": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Neo_Aucoustic_Intelligence.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EventHandlerTests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UI-mainmenu&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\melle\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
       <recent name="C:\Users\vooij\IdeaProjects\Neo_Aucoustic_Intelligence\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.neo_aucoustic_intelligence.HelloApplication" />
+      <module name="Neo_Aucoustic_Intelligence" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.neo_aucoustic_intelligence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in Neo_Aucoustic_Intelligence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Neo_Aucoustic_Intelligence" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,11 +120,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.HelloApplication" />
       <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
       <item itemvalue="JUnit.EventHandlerTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.All in Neo_Aucoustic_Intelligence" />
         <item itemvalue="JUnit.EventHandlerTests" />
       </list>
