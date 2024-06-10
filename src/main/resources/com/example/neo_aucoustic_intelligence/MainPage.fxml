@@ -54,10 +54,15 @@
             <Image url="@Rectangle_1.png" />
          </image>
       </ImageView>
-      <ScrollPane fx:id="scrollpane" layoutY="88.0" prefHeight="512.0" prefWidth="200.0" styleClass="scrollpane" stylesheets="@style.css">
+      <ScrollPane fx:id="scrollpane" layoutY="88.0" prefHeight="512.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d; -fx-background: #1d1d1d;" styleClass="scrollpane" stylesheets="@style.css">
          <content>
             <AnchorPane fx:id="sidebar_chat" prefHeight="508.0" prefWidth="198.0" />
          </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scrollpane1" layoutX="200.0" layoutY="89.0" prefHeight="431.0" prefWidth="592.0" style="-fx-background: #383838; -fx-background-color: #383838;">
+        <content>
+          <AnchorPane fx:id="textUitvoer" minHeight="0.0" minWidth="0.0" prefHeight="429.0" prefWidth="590.0" />
+        </content>
       </ScrollPane>
    </children>
 </AnchorPane>

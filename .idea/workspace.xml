@@ -7,6 +7,9 @@
     <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="merge doet het">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/MainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/MainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/neo_aucoustic_intelligence/textborder.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716800589756</updated>
-      <workItem from="1718009182965" duration="3504000" />
+      <workItem from="1718009182965" duration="7070000" />
     </task>
     <task id="LOCAL-00001" summary="Updated .gitignore">
       <option name="closed" value="true" />

@@ -32,6 +32,12 @@ public class MainPageController {
     private ImageView button_showSidebar;
 
     @FXML
+    private ScrollPane scrollpane1;
+
+    @FXML
+    private AnchorPane textUitvoer;
+
+    @FXML
     private Label label_title;
 
     @FXML
@@ -52,6 +58,9 @@ public class MainPageController {
     @FXML
     private Button uitlogKnop;
 
+    @FXML
+    private Label newLabel;
+
 
     @FXML
     void logoutDropdown(ActionEvent event) {
@@ -65,14 +74,62 @@ public class MainPageController {
 
     @FXML
     void sendPrompt(ActionEvent event) {
-        BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
-        // berichtEventArgs.chatID = ;
-        berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
-        MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
+        if (txt_promptField.getText().equals("")) { //try catch?
+            System.out.println("Er is geen prompt text meegegeven. Probeer het opnieuw.");
+        }
+        else {
+            BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
+            // berichtEventArgs.chatID = ;
+            berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
+            MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
 
-        //UI deel
-        TextField textField = new TextField("test");
-        textField.setPromptText("Prompt");
+            //UI deel
+            /*newLabel();
+            txt_promptField.clear();
+            newAIAnswer();*/
+        }
+    }
+
+    @FXML
+    void newLabel() {
+        double top = 2.0;
+        double laagstGeplaatsteBericht = 0;
+        for (Node node : textUitvoer.getChildren()) {
+            double stageHeight = SceneManager.getMainScherm().getHeight();
+            AnchorPane.getTopAnchor(node);
+            if (laagstGeplaatsteBericht == 0) {
+                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
+            }
+            if (laagstGeplaatsteBericht < AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node))) {
+                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
+            }
+            top = 20 + laagstGeplaatsteBericht;
+        }
+        Label newLabel = new Label(txt_promptField.getText());
+        AnchorPane.setTopAnchor(newLabel, top);
+        AnchorPane.setRightAnchor(newLabel, 2.0);
+        textUitvoer.getChildren().add(newLabel);
+    }
+
+    @FXML
+    void newAIAnswer() {
+        double top = 2.0;
+        double laagstGeplaatsteBericht = 0;
+        for (Node node : textUitvoer.getChildren()) {
+            double stageHeight = SceneManager.getMainScherm().getHeight();
+            AnchorPane.getTopAnchor(node);
+            if (laagstGeplaatsteBericht == 0) {
+                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
+            }
+            if (laagstGeplaatsteBericht < AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node))) {
+                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
+            }
+            top = 20 + laagstGeplaatsteBericht;
+        }
+        Label newLabel = new Label("Dit is een voorbeeld van een antwoord van de ai.");
+        AnchorPane.setTopAnchor(newLabel, top);
+        AnchorPane.setLeftAnchor(newLabel, 4.0);
+        textUitvoer.getChildren().add(newLabel);
     }
 
     @FXML
