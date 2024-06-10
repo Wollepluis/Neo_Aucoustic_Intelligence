@@ -22,7 +22,7 @@ public class MockupDatabase extends Database {
         return null;
     }
 
-    public void uploadData(DataObject data, String dataType) {
+    public void uploadData(DataObject data) {
         SaveData saveData = new SaveData();
         hashMap.put(data.id, data.type);
         mapje.put(hashMap, data);
