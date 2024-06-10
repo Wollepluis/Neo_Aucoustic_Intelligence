@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -37,13 +38,20 @@ public class MainPageController {
     private ImageView newChat;
 
     @FXML
+    private ScrollPane scrollpane;
+
+    @FXML
     private AnchorPane sidebar;
+
+    @FXML
+    private AnchorPane sidebar_chat;
 
     @FXML
     private TextField txt_promptField;
 
     @FXML
     private Button uitlogKnop;
+
 
     @FXML
     void logoutDropdown(ActionEvent event) {
@@ -58,7 +66,7 @@ public class MainPageController {
     @FXML
     void sendPrompt(ActionEvent event) {
         BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
-       // berichtEventArgs.chatID = ;
+        // berichtEventArgs.chatID = ;
         berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
         MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
     }
@@ -68,22 +76,23 @@ public class MainPageController {
 
         if (sidebar.isVisible()) {
             sidebar.setVisible(false);
+            scrollpane.setVisible(false);
             txt_promptField.setPrefWidth(680);
             label_title.setLayoutX(294);
 
         }
         else {
             sidebar.setVisible(true);
+            scrollpane.setVisible(true);
             txt_promptField.setPrefWidth(490);
             label_title.setLayoutX(384);
         }
     }
 
     @FXML
-
     void uitloggen(MouseEvent event) throws IOException {
-        //login.setIngelogdStatus(false);
-        SceneManager.switchScene();
+        Login.setIngelogdStatus(false);
+        SceneManager.switchScene(0);
     }
 
     @FXML
@@ -92,37 +101,19 @@ public class MainPageController {
     }
 
     @FXML
-    private boolean isButtonAtPosition(double top, double left) {
-        for (Node node : sidebar.getChildren()) {
-            if (node instanceof Button) {
-                Double topAnchor = AnchorPane.getTopAnchor(node);
-                Double leftAnchor = AnchorPane.getLeftAnchor(node);
-                if (topAnchor != top && leftAnchor != left) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    @FXML
     void setNewChat(MouseEvent event1) {
-        Button newButton = new Button("nog leeg"); //inhoud van button moet onderwerp zijn van de chat
+        Button newButton = new Button("Voer onderwerp in"); //inhoud van button moet onderwerp zijn van de chat
         newButton.setOnAction(event -> { //hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
 
         });
 
         // Set the button's position
-        for (Node node : sidebar.getChildren()) {
-            double top = 75.0;
-            if (isButtonAtPosition(top, 74.0)) {
-                top = top + 43.0;
-            }
-            else {
-                AnchorPane.setTopAnchor(newButton, top);
-                AnchorPane.setLeftAnchor(newButton, 74.0);
-            }
+        double top = 10.0;
+        for (Node node : sidebar_chat.getChildren()) {
+            top = top + 43.0;
         }
-        sidebar.getChildren().add(newButton);
+        AnchorPane.setTopAnchor(newButton, top);
+        AnchorPane.setLeftAnchor(newButton, 67.0);
+        sidebar_chat.getChildren().add(newButton);
     }
 }
