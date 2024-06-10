@@ -33,6 +33,6 @@ public class Login {
     }
 
     public void uitloggen() {
-        ingelogdStatus = false;
+        //ingelogdStatus = false;
     }
 }
