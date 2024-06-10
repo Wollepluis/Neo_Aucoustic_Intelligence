@@ -71,6 +71,9 @@ public class MainPageController {
     @FXML
     private VBox vBox_Gebruiker;
 
+    @FXML
+    private VBox vBox_sidebar;
+
 
     @FXML
     void logoutDropdown(ActionEvent event) {
@@ -96,7 +99,7 @@ public class MainPageController {
             //todo UI deel + kleur van text in prompt veld moet aangepast worden
             newLabel();
             txt_promptField.clear();
-            newAIAnswer();
+            //newAIAnswer();
         }
     }
 
@@ -118,7 +121,6 @@ public class MainPageController {
 
     @FXML
     void showSidebar(MouseEvent event) {
-
         if (sidebar.isVisible()) {
             sidebar.setVisible(false);
             scrollpane.setVisible(false);
@@ -161,6 +163,9 @@ public class MainPageController {
     public void setButtonId(){}
     @FXML
     void setNewChat(MouseEvent event1) {
+        vBox_sidebar.setAlignment(Pos.BASELINE_CENTER);
+        vBox_sidebar.setSpacing(20.0);
+        vBox_sidebar.setPadding(new javafx.geometry.Insets(10, 0, 0, 0));
         Button newButton = new Button("Voer onderwerp in");
         ArrayList<Button> allButtons = new ArrayList<>();
         newButton.setId("chatButton" + allButtons.size());
@@ -177,13 +182,6 @@ public class MainPageController {
         newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
         });
 
-        // Set the button's position
-        double top = 10.0;
-        for (Node node : sidebar_chat.getChildren()) {
-            top = top + 43.0;
-        }
-        AnchorPane.setTopAnchor(newButton, top);
-        AnchorPane.setLeftAnchor(newButton, 10.0);
-        sidebar_chat.getChildren().add(newButton);
+        vBox_sidebar.getChildren().add(newButton);
     }
 }

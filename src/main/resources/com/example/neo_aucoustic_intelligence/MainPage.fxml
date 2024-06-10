@@ -22,12 +22,12 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label fx:id="label_title" layoutX="384.0" layoutY="36.0" prefHeight="30.0" prefWidth="234.0" stylesheets="@style.css" text="Aucoustic Intelligence" textFill="WHITE" AnchorPane.topAnchor="30.0">
+      <Label fx:id="label_title" layoutX="384.0" layoutY="36.0" prefHeight="30.0" prefWidth="234.0" text="Aucoustic Intelligence" textFill="WHITE" AnchorPane.topAnchor="30.0">
          <font>
             <Font name="SuiGenerisRg-Regular" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="txt_promptField" layoutX="426.0" layoutY="554.0" prefHeight="50.0" prefWidth="490.0" promptText="Vul hier uw prompt in..." style="-fx-background-color: #4d4d4d; -fx-text-fill: white;" stylesheets="@style.css" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="80.0">
+      <TextField fx:id="txt_promptField" layoutX="426.0" layoutY="554.0" prefHeight="50.0" prefWidth="490.0" promptText="Vul hier uw prompt in..." style="-fx-background-color: #4d4d4d; -fx-text-fill: white;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="80.0">
          <font>
             <Font name="SuiGenerisRg-Regular" size="15.0" />
          </font>
@@ -56,7 +56,7 @@
             <Image url="@Rectangle_1.png" />
          </image>
       </ImageView>
-      <ScrollPane fx:id="scrollpane1" layoutX="3.0" layoutY="89.0" prefHeight="431.0" prefWidth="789.0" style="-fx-background: #383838; -fx-background-color: #383838;">
+      <ScrollPane fx:id="scrollpane1" layoutX="3.0" layoutY="89.0" prefHeight="431.0" prefWidth="800.0" style="-fx-background: #383838; -fx-background-color: #383838;" styleClass="scrollpane">
         <content>
           <AnchorPane fx:id="textUitvoer" minHeight="0.0" minWidth="0.0" prefHeight="429.0" prefWidth="787.0">
                <children>
@@ -73,9 +73,12 @@
                </children></AnchorPane>
         </content>
       </ScrollPane>
-      <ScrollPane fx:id="scrollpane" layoutY="88.0" prefHeight="512.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d; -fx-background: #1d1d1d;" styleClass="scrollpane" stylesheets="@style.css">
+      <ScrollPane fx:id="scrollpane" layoutY="88.0" prefHeight="512.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d; -fx-background: #1d1d1d;" styleClass="scrollpane">
          <content>
-            <AnchorPane fx:id="sidebar_chat" prefHeight="508.0" prefWidth="198.0" />
+            <AnchorPane fx:id="sidebar_chat" prefHeight="508.0" prefWidth="198.0">
+               <children>
+                  <VBox fx:id="vBox_sidebar" prefHeight="505.0" prefWidth="194.0" />
+               </children></AnchorPane>
          </content>
       </ScrollPane>
    </children>
