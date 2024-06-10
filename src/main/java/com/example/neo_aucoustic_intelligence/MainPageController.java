@@ -69,6 +69,10 @@ public class MainPageController {
         // berichtEventArgs.chatID = ;
         berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
         MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
+
+        //UI deel
+        TextField textField = new TextField("test");
+        textField.setPromptText("Prompt");
     }
 
     @FXML
@@ -91,7 +95,6 @@ public class MainPageController {
 
     @FXML
     void uitloggen(MouseEvent event) throws IOException {
-        Login.setIngelogdStatus(false);
         SceneManager.switchScene(0);
     }
 
