@@ -1,11 +1,15 @@
 package Database;
 
 public class ChatData extends DataObject {
-    public String onderwerp = "";
+    public String onderwerp;
 
     public ChatData() {
 
     }
+    public ChatData(String onderwerp) {
+        this.onderwerp = onderwerp;
+    }
+
     @Override
     public String toString() {
         return null;

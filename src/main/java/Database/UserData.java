@@ -16,6 +16,7 @@ public class UserData extends DataObject {
         this.gebruikersnaam = gebruikersnaam;
         this.wachtwoord = wachtwoord;
         chats = new ArrayList<>();
+        addChat(new ChatData("Is Abhishrek de niggerman"));
     }
 
 

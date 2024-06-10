@@ -15,7 +15,7 @@ public class MockupDatabase extends Database {
         return mapje.get(key);
     }
 
-    public static UserData getGebruiker(String gebruiker, String wachtwoord) {
+    public UserData getGebruiker(String gebruiker, String wachtwoord) {
         if(gebruiker.equals(SaveManager.loadUserData(gebruiker).getGebruikersnaam()) && (wachtwoord.equals(SaveManager.loadUserData(gebruiker).getWachtwoord()))) {
             return SaveManager.loadUserData(gebruiker);
         }
@@ -23,8 +23,6 @@ public class MockupDatabase extends Database {
     }
 
     public void uploadData(DataObject data, String dataType) {
-        int size = hashMap.size() + 1;
-        data.id = Integer.toString(size);
         SaveData saveData = new SaveData();
         hashMap.put(data.id, data.type);
         mapje.put(hashMap, data);

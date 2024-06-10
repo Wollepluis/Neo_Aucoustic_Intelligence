@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="getGebruiker()">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/SaveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/SaveManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/ChatData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/ChatData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/MockupDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/MockupDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Database/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/UserData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718012969040</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="getGebruiker()">
+      <option name="closed" value="true" />
+      <created>1718013753922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718013753922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,16 +149,6 @@
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Database/DataObject.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Database/DataObject.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
