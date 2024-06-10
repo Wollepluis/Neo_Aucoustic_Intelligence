@@ -1,5 +1,11 @@
 package Login;
 
+import Database.DataObject;
+import Database.MockupDatabase;
+import Database.UserData;
+import UI.SceneManager;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Login {
@@ -13,26 +19,34 @@ public class Login {
         this.wachtwoord = wachtwoord;
     }
 
-    public boolean getIngelogdStatus() {
-        return gebruiker.ingelogd;
+    public Gebruiker getGebruiker() {
+        return gebruiker;
     }
 
     public void setIngelogdStatus(boolean newIngelogdStatus) {
         gebruiker.ingelogd = newIngelogdStatus;
     }
 
-    public void inloggen() {
-
-        //koppeldatabase  database.getGebruiker(gebruikersnaam, wachtwoord);
-
+    public boolean inloggen() throws IOException {
+        MockupDatabase mockupDatabase  = new MockupDatabase();
+        UserData userdata = mockupDatabase.getGebruiker(gebruikersnaam, wachtwoord);
+        if (userdata != null) {
+            SceneManager.switchScene(1);
+            gebruiker.gebruikersNaam = userdata.getGebruikersnaam();
+            gebruiker.wachtwoord = userdata.getWachtwoord();
+            gebruiker.ingelogd = true;
+            return false;
+        }
+            return true;
     }
 
-    public void setGebruiker(String gebruikersnaam1, String email1, String wachtwoord1) {
-        Gebruiker gebruiker1 = new Gebruiker(gebruikersnaam1, email1, wachtwoord1);
 
-    }
 
-    public void uitloggen() {
-        //ingelogdStatus = false;
+    public void uitloggen() throws IOException {
+        gebruiker.wachtwoord = null;
+        gebruiker.gebruikersNaam = null;
+        gebruiker.email = null;
+        gebruiker.ingelogd = false;
+        SceneManager.switchScene(0);
     }
 }

@@ -15,7 +15,7 @@ public class MockupDatabase extends Database {
         return mapje.get(key);
     }
 
-    public static UserData getGebruiker(String gebruiker, String wachtwoord) {
+    public UserData getGebruiker(String gebruiker, String wachtwoord) {
         if(gebruiker.equals(SaveManager.loadUserData(gebruiker).getGebruikersnaam()) && (wachtwoord.equals(SaveManager.loadUserData(gebruiker).getWachtwoord()))) {
             return SaveManager.loadUserData(gebruiker);
         }

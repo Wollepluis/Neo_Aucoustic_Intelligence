@@ -36,13 +36,13 @@ public class LoginSchermController {
     @FXML
     void naarMain(ActionEvent event) throws IOException {
         Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
-        if (login.inloggen()) {
-            SceneManager.switchScene(1);
-        }
-        else {
+        if(login.inloggen()) {
+            System.out.println("teset222");
             errorText.setDisable(false);
             errorText.opacityProperty().set(1);
         }
+
+        }
     }
 
-}
+

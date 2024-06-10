@@ -17,8 +17,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import javafx.scene.Node;
-import messageMediator.BerichtEventArgs;
-import messageMediator.MessageMediator;
 
 public class MainPageController {
 
@@ -65,10 +63,12 @@ public class MainPageController {
 
     @FXML
     void sendPrompt(ActionEvent event) {
-        BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
+       /* BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
         // berichtEventArgs.chatID = ;
         berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
         MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
+
+        */
     }
 
     @FXML
@@ -91,8 +91,9 @@ public class MainPageController {
 
     @FXML
     void uitloggen(MouseEvent event) throws IOException {
-        Login.setIngelogdStatus(false);
+
         SceneManager.switchScene(0);
+
     }
 
     @FXML
