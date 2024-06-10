@@ -1,11 +1,15 @@
 package Login;
 
 public class Gebruiker {
-    private String gebruikersNaam;
-    private String email;
-    private String wachtwoord;
+    public String gebruikersNaam;
+    public String email;
+    public String wachtwoord;
+    public boolean ingelogd;
 
-    public Gebruiker() {
+    public Gebruiker(String gebruikersNaam, String email, String wachtwoord) {
+        this.gebruikersNaam = gebruikersNaam;
+        this.email = email;
+        this.wachtwoord = wachtwoord;
     }
 
     public String getGebruikersNaam() {

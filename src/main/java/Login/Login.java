@@ -1,39 +1,38 @@
 package Login;
 
-import com.example.neo_aucoustic_intelligence.*;
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Login {
-    private static boolean ingelogdStatus = false;
-    HashMap<String, String> gebruikers = new HashMap<String, String>();
+    public Gebruiker gebruiker;
     private String gebruikersnaam;
     private String wachtwoord;
+
 
     public Login(String gebruikersnaam, String wachtwoord) {
         this.gebruikersnaam = gebruikersnaam;
         this.wachtwoord = wachtwoord;
     }
 
-    public static boolean getIngelogdStatus(){
-        return ingelogdStatus;
-    }
-    public static void setIngelogdStatus(boolean newIngelogdStatus){ingelogdStatus = newIngelogdStatus;}
-    public void voegGebruikertoe(Gebruiker gebruiker) {
-        gebruikers.put(gebruiker.getGebruikersNaam(), gebruiker.getWachtwoord());
+    public boolean getIngelogdStatus() {
+        return gebruiker.ingelogd;
     }
 
-    public boolean inloggen(){
-        gebruikers.put("Morris", "M123");
-
-        if (gebruikers.get(gebruikersnaam).equals(wachtwoord)) {
-            ingelogdStatus = true;
-            return true;
-        }
-        else {
-            return false;
-        }
+    public void setIngelogdStatus(boolean newIngelogdStatus) {
+        gebruiker.ingelogd = newIngelogdStatus;
     }
-    public void uitloggen(){
+
+    public void inloggen() {
+
+        //koppeldatabase  database.getGebruiker(gebruikersnaam, wachtwoord);
+
+    }
+
+    public void setGebruiker(String gebruikersnaam1, String email1, String wachtwoord1) {
+        Gebruiker gebruiker1 = new Gebruiker(gebruikersnaam1, email1, wachtwoord1);
+
+    }
+
+    public void uitloggen() {
         ingelogdStatus = false;
     }
 }

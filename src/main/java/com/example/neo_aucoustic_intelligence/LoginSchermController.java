@@ -14,7 +14,6 @@ import java.io.IOException;
 public class LoginSchermController {
 
 
-
     @FXML
     private AnchorPane Background;
 
@@ -36,13 +35,6 @@ public class LoginSchermController {
     @FXML
     void naarMain(ActionEvent event) throws IOException {
         Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
-        if (login.inloggen()) {
-            SceneManager.switchScene();
-        }
-        else {
-            errorText.setDisable(false);
-            errorText.opacityProperty().set(1);
-        }
+        login.inloggen();
     }
-
 }

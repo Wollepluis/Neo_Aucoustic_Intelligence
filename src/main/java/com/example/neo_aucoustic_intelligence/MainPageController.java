@@ -58,7 +58,7 @@ public class MainPageController {
     @FXML
     void sendPrompt(ActionEvent event) {
         BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
-        // berichtEventArgs.chatID = ;
+       // berichtEventArgs.chatID = ;
         berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
         MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
     }
@@ -82,7 +82,7 @@ public class MainPageController {
     @FXML
 
     void uitloggen(MouseEvent event) throws IOException {
-        Login.setIngelogdStatus(false);
+        //login.setIngelogdStatus(false);
         SceneManager.switchScene();
     }
 
