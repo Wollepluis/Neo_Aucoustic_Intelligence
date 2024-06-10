@@ -83,7 +83,7 @@ public class MainPageController {
             berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
             MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
 
-            //UI deel
+            //todo UI deel
             /*newLabel();
             txt_promptField.clear();
             newAIAnswer();*/
@@ -168,7 +168,7 @@ public class MainPageController {
         Button newButton = new Button("Voer onderwerp in"); //inhoud van button moet onderwerp zijn van de chat
         //newbutton.setfxid()
         //sla button op in static arraylist
-        newButton.setOnAction(event -> { //hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
+        newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
         });
 
         // Set the button's position
@@ -182,7 +182,7 @@ public class MainPageController {
     }
 
     void onRightMouseClick(MouseEvent event) {
-        /*zorg dat de command alleen werkt wanneer de cursor op de juiste button hovert.
+        /* todo zorg dat de command alleen werkt wanneer de cursor op de juiste button hovert.
         fxid buttonid
         Button button;
         // geef button ook meteen een id
