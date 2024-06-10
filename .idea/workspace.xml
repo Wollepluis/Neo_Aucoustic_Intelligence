@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="workspace.xml updatte" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="workspace.xml updatte">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718015640398</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="workspace.xml updatte">
+      <option name="closed" value="true" />
+      <created>1718016015551</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1718016015551</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
