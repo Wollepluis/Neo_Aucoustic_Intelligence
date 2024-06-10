@@ -1,8 +1,7 @@
 package Chat;
 
-import Mediator.MessageMediator;
-import events.EventArgs;
-import messageMediator.BerichtEventArgs;
+import Events.EventArgs;
+import MessageMediator.*;
 
 public class BerichtHandler {
 
@@ -21,10 +20,11 @@ public class BerichtHandler {
         }
         BerichtEventArgs berichtArgs = (BerichtEventArgs) args;
         ChatManager.getInstance().getChat(berichtArgs.chatID).voegBerichtToe(berichtArgs.bericht);
+        System.out.println("BerichtHandler heeft bericht voor chat: " + berichtArgs.chatID + "ontvangen");
     }
 
     private void opBerichtVerstuurd(Object sender, EventArgs args){
-        MessageMediator.krijgInstantie().opBerichtVerstuurd.invoke(sender, args);
+        //MessageMediator.krijgInstantie().opBerichtVerstuurd.invoke(sender, args);
     }
 
     private BerichtHandler(){

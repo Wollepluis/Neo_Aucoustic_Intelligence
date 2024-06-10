@@ -1,4 +1,4 @@
-package events;
+package Events;
 
 public class EventArgs {
     public static EventArgs Empty = new EventArgs();

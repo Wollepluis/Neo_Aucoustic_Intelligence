@@ -1,7 +1,7 @@
-package messageMediator;
+package MessageMediator;
 
 import Chat.Bericht;
-import events.EventArgs;
+import Events.EventArgs;
 
 public class BerichtEventArgs extends EventArgs {
     public int chatID;
