@@ -11,30 +11,35 @@ import java.io.IOException;
 public final class SceneManager {
 
     private static Stage mainScherm;
+    private static Stage inlogScherm;
     private static SceneManager instance;
 
     public static void switchScene(int scherm) throws IOException {
         //scherm 0 = inlogpagina
         //scherm 1 = main page
-        System.out.println(scherm);
         switch (scherm) {
             case 0:
-                System.out.println("test");
+                inlogScherm = new Stage();
+                FXMLLoader fxmlLoader1 = new FXMLLoader(HelloApplication.class.getResource("LoginScherm.fxml"));
+                Scene scene1 = new Scene(fxmlLoader1.load(), 800, 600);
+                inlogScherm.setTitle("Loginscherm");
+                inlogScherm.setScene(scene1);
+                inlogScherm.setResizable(false);
                 getMainScherm().hide();
-                HelloApplication.getInlogScherm().show();
+                inlogScherm.show();
                 break;
             case 1:
-                if(mainScherm == null) {
-                    mainScherm = new Stage();
-                    FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MainPage.fxml"));
-                    Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-                    mainScherm.setTitle("Main Page");
-                    mainScherm.setScene(scene);
-                    mainScherm.setResizable(false);
-                    mainScherm.show();
+                mainScherm = new Stage();
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MainPage.fxml"));
+                Scene scene = new Scene(fxmlLoader.load(), 800, 600);
+                mainScherm.setTitle("Main Page");
+                mainScherm.setScene(scene);
+                mainScherm.setResizable(false);
+                if (getInlogScherm() == null) {
+                    HelloApplication.getInlogScherm().hide();
                 }
-                HelloApplication.getInlogScherm().hide();
-                getMainScherm().show();
+                else {getInlogScherm().hide();}
+                mainScherm.show();
                 break;
             default:
                 System.out.println("Er is iets fout gegaan tijdens het wisselen van de schermen");
@@ -43,6 +48,9 @@ public final class SceneManager {
     }
     public static Stage getMainScherm() {
         return mainScherm;
+    }
+    public static Stage getInlogScherm() {
+        return inlogScherm;
     }
     public static SceneManager getInstance() {
         if (instance == null) {
