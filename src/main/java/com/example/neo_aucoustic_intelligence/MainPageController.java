@@ -160,9 +160,14 @@ public class MainPageController {
         uitlogKnop.setVisible(false);
     }
 
+    public void setButtonText(Button button, String text) {
+        button.setText(text);
+    }
     @FXML
     void setNewChat(MouseEvent event1) {
         Button newButton = new Button("Voer onderwerp in"); //inhoud van button moet onderwerp zijn van de chat
+        //newbutton.setfxid()
+        //sla button op in static arraylist
         newButton.setOnAction(event -> { //hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
         });
 
@@ -174,5 +179,22 @@ public class MainPageController {
         AnchorPane.setTopAnchor(newButton, top);
         AnchorPane.setLeftAnchor(newButton, 10.0);
         sidebar_chat.getChildren().add(newButton);
+    }
+
+    void onRightMouseClick(MouseEvent event) {
+        /*zorg dat de command alleen werkt wanneer de cursor op de juiste button hovert.
+        fxid buttonid
+        Button button;
+        // geef button ook meteen een id
+        buttonid = onRightMouseButtonClick.getfxid(
+
+        for (Button b : allebuttons) {
+            if (b.getfxid().equals()) {
+                String nieuweText = scanner
+                setButtontext(b, nieuweText);
+            }
+        }
+
+         */
     }
 }
