@@ -6,11 +6,9 @@ import java.util.HashMap;
 import java.util.*;
 public abstract class Database {
 
-    public static Map<String, String> hashMap;
-    public static Map<Map<String, String>, DataObject> mapje;
-    public Database(/*CommunicatieProtocol protocol*/) {
-        hashMap = new HashMap<>();
-        mapje = new HashMap<>();
+    public static Map<String, String> hashMap = new HashMap<>();
+    public static Map<Map<String, String>, DataObject> mapje = new HashMap<>();
+    public Database() {
     }
 
     public abstract DataObject getData(String id, String type);

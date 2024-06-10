@@ -5,7 +5,7 @@ import java.util.Map;
 public class MockupDatabase extends Database {
 
     public MockupDatabase() {
-        super(/*Communicatieprotocol protocol*/);
+        super();
     }
 
     @Override

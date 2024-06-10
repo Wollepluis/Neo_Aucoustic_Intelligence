@@ -8,6 +8,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
+import static Database.Database.hashMap;
+import static Database.Database.mapje;
+
 public class SaveManager {
     private static final boolean debug = false;
     private static final String DATA_PATH = "Aucoustic-intelligence"; // Define the data directory path
@@ -74,10 +77,10 @@ public class SaveManager {
         SaveData saveData = new SaveData();
         String rawData = readFile(persistentDataPath + "/Data/" + type + "/" + id + "/" + id + ".txt").trim();
         saveData.setData(rawData);
-        DataObject dataObject = null;
+        DataObject dataObject;
         switch (type) {
             case "UserData":
-                dataObject = new UserData();
+                dataObject = new UserData(id, type);
                 break;
             case "ChatData":
                 dataObject = new ChatData();
@@ -85,6 +88,8 @@ public class SaveManager {
             case "GeschiedenisData":
                 dataObject = new GeschiedenisData();
                 break;
+            default:
+                dataObject = null;
         }
         dataObject.load(saveData);
 
@@ -93,10 +98,10 @@ public class SaveManager {
 
     public static Map<Map<String, String>, DataObject> loadAllDataObjecten(String type) {
         checkAllFolders();
-        Map<String, String> hashMap = new HashMap<>();
-        Map<Map<String, String>, DataObject> mapje = new HashMap<>();
+        return weetIkVeel(type);
+    }
 
-
+    public static Map<Map<String, String>,DataObject> weetIkVeel(String type) {
         File dataFolder = new File(persistentDataPath + "/Data/" + type + "/");
         File[] dataFolders = dataFolder.listFiles();
         if (dataFolders != null) {
@@ -112,6 +117,8 @@ public class SaveManager {
     }
 
     public static void initialize(){
-        Database.mapje = loadAllDataObjecten("UserData");
+        MockupDatabase database = new MockupDatabase();
+        database.mapje = loadAllDataObjecten("UserData");
+        mapje = loadAllDataObjecten("ChatData");
     }
 }
