@@ -1,6 +1,7 @@
 package Database;
 
 public class GeschiedenisData extends DataObject {
+    private String Inhoud;
 
     @Override
     public String toString() {
