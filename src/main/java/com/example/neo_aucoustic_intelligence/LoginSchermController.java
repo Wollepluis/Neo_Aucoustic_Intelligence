@@ -37,7 +37,7 @@ public class LoginSchermController {
     void naarMain(ActionEvent event) throws IOException {
         Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
         if (login.inloggen()) {
-            SceneManager.switchScene();
+            SceneManager.switchScene(1);
         }
         else {
             errorText.setDisable(false);

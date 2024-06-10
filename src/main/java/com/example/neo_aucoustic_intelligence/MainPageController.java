@@ -92,7 +92,7 @@ public class MainPageController {
     @FXML
     void uitloggen(MouseEvent event) throws IOException {
         Login.setIngelogdStatus(false);
-        SceneManager.switchScene();
+        SceneManager.switchScene(0);
     }
 
     @FXML
