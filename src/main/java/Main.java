@@ -9,6 +9,7 @@ import MessageMediator.MessageMediator;
 public class Main {
     public static void main(String[] args){
         AiModel aiModel = new MockupAI();
+
         BerichtHandler berichtHandler = BerichtHandler.getInstance();
 
         BerichtEventArgs a = new BerichtEventArgs();
