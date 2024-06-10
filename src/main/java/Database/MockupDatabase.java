@@ -1,11 +1,15 @@
 package Database;
 
+import Events.EventArgs;
+import MessageMediator.*;
+
 import java.util.Map;
 
 public class MockupDatabase extends Database {
 
     public MockupDatabase() {
         super();
+        MessageMediator.krijgInstantie().opBerichtVerstuurd.subscribe(this::opBerichtVerstuurd);
     }
 
     @Override
@@ -13,6 +17,11 @@ public class MockupDatabase extends Database {
         hashMap.put(id, type);
         Map<String, String> key = hashMap;
         return mapje.get(key);
+    }
+
+    public void opBerichtVerstuurd(Object sender, EventArgs args){
+        if (!(args instanceof BerichtEventArgs)) return;
+        // TODO iemand moet dit ooit nog eens maken zodat opgeslagen wordt als verstuurd bericht wordtddt
     }
 
     public void uploadData(DataObject data, String dataType) {

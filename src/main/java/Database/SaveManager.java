@@ -80,7 +80,7 @@ public class SaveManager {
         DataObject dataObject;
         switch (type) {
             case "UserData":
-                dataObject = new UserData(id, type);
+                dataObject = new UserData();
                 break;
             case "ChatData":
                 dataObject = new ChatData();
@@ -98,10 +98,6 @@ public class SaveManager {
 
     public static Map<Map<String, String>, DataObject> loadAllDataObjecten(String type) {
         checkAllFolders();
-        return weetIkVeel(type);
-    }
-
-    public static Map<Map<String, String>,DataObject> weetIkVeel(String type) {
         File dataFolder = new File(persistentDataPath + "/Data/" + type + "/");
         File[] dataFolders = dataFolder.listFiles();
         if (dataFolders != null) {

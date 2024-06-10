@@ -64,18 +64,10 @@ public class UserData extends DataObject {
         super.load(saveData);
         gebruikersnaam = saveData.readAttribute("gebruikersnaam");
         wachtwoord = saveData.readAttribute("wachtwoord");
-
         int i = 0;
         while (true) {
             String chat = saveData.readAttribute("chat" + i);
-            if (chat == null) {
-                System.out.println(id);
-                System.out.println(type);
-                System.out.println(getGebruikersnaam());
-                System.out.println(getWachtwoord());
-                getChats();
-                return;
-            }
+            if (chat == null) return;
             addChat(SaveManager.loadDataObject(chat, "ChatData"));
             i++;
         }
