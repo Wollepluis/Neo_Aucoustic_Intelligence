@@ -104,7 +104,6 @@ public class MainPageController {
     void setNewChat(MouseEvent event1) {
         Button newButton = new Button("Voer onderwerp in"); //inhoud van button moet onderwerp zijn van de chat
         newButton.setOnAction(event -> { //hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
-
         });
 
         // Set the button's position
@@ -113,7 +112,7 @@ public class MainPageController {
             top = top + 43.0;
         }
         AnchorPane.setTopAnchor(newButton, top);
-        AnchorPane.setLeftAnchor(newButton, 67.0);
+        AnchorPane.setLeftAnchor(newButton, 10.0);
         sidebar_chat.getChildren().add(newButton);
     }
 }
