@@ -4,6 +4,7 @@ import Chat.Bericht;
 import Chat.BerichtHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import javafx.scene.Node;
+import javafx.scene.layout.VBox;
 import messageMediator.BerichtEventArgs;
 import messageMediator.MessageMediator;
 
@@ -61,6 +63,12 @@ public class MainPageController {
     @FXML
     private Label newLabel;
 
+    @FXML
+    private VBox vBox_AI;
+
+    @FXML
+    private VBox vBox_Gebruiker;
+
 
     @FXML
     void logoutDropdown(ActionEvent event) {
@@ -83,53 +91,27 @@ public class MainPageController {
             berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
             MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
 
-            //todo UI deel
-            /*newLabel();
+            //todo UI deel + kleur van text in prompt veld moet aangepast worden
+            newLabel();
             txt_promptField.clear();
-            newAIAnswer();*/
+            newAIAnswer();
         }
     }
 
     @FXML
     void newLabel() {
-        double top = 2.0;
-        double laagstGeplaatsteBericht = 0;
-        for (Node node : textUitvoer.getChildren()) {
-            double stageHeight = SceneManager.getMainScherm().getHeight();
-            AnchorPane.getTopAnchor(node);
-            if (laagstGeplaatsteBericht == 0) {
-                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
-            }
-            if (laagstGeplaatsteBericht < AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node))) {
-                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
-            }
-            top = 20 + laagstGeplaatsteBericht;
-        }
+        vBox_Gebruiker.setAlignment(Pos.BASELINE_RIGHT);
+        vBox_Gebruiker.setSpacing(25.0);
         Label newLabel = new Label(txt_promptField.getText());
-        AnchorPane.setTopAnchor(newLabel, top);
-        AnchorPane.setRightAnchor(newLabel, 2.0);
-        textUitvoer.getChildren().add(newLabel);
+        vBox_Gebruiker.getChildren().add(newLabel);
     }
 
     @FXML
     void newAIAnswer() {
-        double top = 2.0;
-        double laagstGeplaatsteBericht = 0;
-        for (Node node : textUitvoer.getChildren()) {
-            double stageHeight = SceneManager.getMainScherm().getHeight();
-            AnchorPane.getTopAnchor(node);
-            if (laagstGeplaatsteBericht == 0) {
-                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
-            }
-            if (laagstGeplaatsteBericht < AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node))) {
-                laagstGeplaatsteBericht = AnchorPane.getTopAnchor(node) + (stageHeight - AnchorPane.getTopAnchor(node) - AnchorPane.getBottomAnchor(node));
-            }
-            top = 20 + laagstGeplaatsteBericht;
-        }
+        vBox_AI.setAlignment(Pos.BASELINE_LEFT);
+        vBox_AI.setSpacing(25.0);
         Label newLabel = new Label("Dit is een voorbeeld van een antwoord van de ai.");
-        AnchorPane.setTopAnchor(newLabel, top);
-        AnchorPane.setLeftAnchor(newLabel, 4.0);
-        textUitvoer.getChildren().add(newLabel);
+        vBox_AI.getChildren().add(newLabel);
     }
 
     @FXML
@@ -140,6 +122,11 @@ public class MainPageController {
             scrollpane.setVisible(false);
             txt_promptField.setPrefWidth(680);
             label_title.setLayoutX(294);
+            vBox_AI.setPrefWidth(789);
+            vBox_AI.setLayoutX(0);
+            vBox_AI.setPadding(new javafx.geometry.Insets(0, 0, 0, 40));
+            vBox_Gebruiker.setPrefWidth(783);
+            vBox_Gebruiker.setLayoutX(0);
 
         }
         else {
@@ -147,6 +134,11 @@ public class MainPageController {
             scrollpane.setVisible(true);
             txt_promptField.setPrefWidth(490);
             label_title.setLayoutX(384);
+            vBox_AI.setPrefWidth(592);
+            vBox_AI.setLayoutX(197);
+            vBox_AI.setPadding(new javafx.geometry.Insets(0, 0, 0, 30));
+            vBox_Gebruiker.setPrefWidth(586);
+            vBox_Gebruiker.setLayoutX(197);
         }
     }
 
