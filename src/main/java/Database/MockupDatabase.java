@@ -21,6 +21,7 @@ public class MockupDatabase extends Database {
 
     public void opBerichtVerstuurd(Object sender, EventArgs args){
         if (!(args instanceof BerichtEventArgs)) return;
+        // TODO iemand moet dit ooit nog eens maken zodat opgeslagen wordt als verstuurd bericht wordtddt
     }
 
     public void uploadData(DataObject data, String dataType) {
