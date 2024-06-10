@@ -80,6 +80,7 @@ public class SaveManager {
         UserData dataObject = new UserData();
         dataObject.load(saveData);
         return dataObject;
+
     }
     public static DataObject loadDataObject(String id, String type){
         SaveData saveData = new SaveData();
