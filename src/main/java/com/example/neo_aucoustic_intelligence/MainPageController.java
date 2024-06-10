@@ -10,11 +10,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import Login.Login;
 import UI.*;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import javafx.scene.Node;
@@ -155,11 +157,23 @@ public class MainPageController {
     public void setButtonText(Button button, String text) {
         button.setText(text);
     }
+
+    public void setButtonId(){}
     @FXML
     void setNewChat(MouseEvent event1) {
-        Button newButton = new Button("Voer onderwerp in"); //inhoud van button moet onderwerp zijn van de chat
-        //newbutton.setfxid()
-        //sla button op in static arraylist
+        Button newButton = new Button("Voer onderwerp in");
+        ArrayList<Button> allButtons = new ArrayList<>();
+        newButton.setId("chatButton" + allButtons.size());
+        newButton.setOnMouseClicked(event -> {
+            if (event.getButton() == MouseButton.SECONDARY) {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Voer nieuwe naam in:"); // Dit moet een pop up window ofzo worden in scenebuilder
+                String nieuweText = scanner.nextLine();
+                newButton.setText(nieuweText);
+            }
+        });
+
+
         newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
         });
 
@@ -171,22 +185,5 @@ public class MainPageController {
         AnchorPane.setTopAnchor(newButton, top);
         AnchorPane.setLeftAnchor(newButton, 10.0);
         sidebar_chat.getChildren().add(newButton);
-    }
-
-    void onRightMouseClick(MouseEvent event) {
-        /* todo zorg dat de command alleen werkt wanneer de cursor op de juiste button hovert.
-        fxid buttonid
-        Button button;
-        // geef button ook meteen een id
-        buttonid = onRightMouseButtonClick.getfxid(
-
-        for (Button b : allebuttons) {
-            if (b.getfxid().equals()) {
-                String nieuweText = scanner
-                setButtontext(b, nieuweText);
-            }
-        }
-
-         */
     }
 }
