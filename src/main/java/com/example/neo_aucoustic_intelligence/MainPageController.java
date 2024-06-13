@@ -259,21 +259,21 @@ public class MainPageController {
                 titledpane_aanpassenGegevens.setVisible(false);
             }
         });
-        button_aanpassenWachtwoord.setOnMouseClicked(event -> {
-            if (event.getButton() == MouseButton.PRIMARY) {
+        button_aanpassenWachtwoord.setOnAction(event -> {
+            //if (event.getButton() == MouseButton.PRIMARY) {
                 button_aanpassenEmail.setVisible(false);
                 button_aanpassenWachtwoord.setVisible(false);
                 button_aanpassenGebruikersnaam.setVisible(false);
                 text_aanpassenGegevens.setText("Voer uw nieuwe wachtwoord in");
                 passwordField_aanpassenGegevens.setVisible(true);
                 button_bevestigenGegevens.setVisible(true);
-                button_bevestigenGegevens.setOnMouseClicked(event1 -> {
-                    if (event1.getButton() == MouseButton.PRIMARY) {
+                button_bevestigenGegevens.setOnAction(event1 -> {
+                    //if (event1.getButton() == MouseButton.PRIMARY) {
                         //Hier moet dan komen dat textfield_aanpassengegevens het nieuwe wachtwoord wordt van de gebruiker
                     }
-                });
+                /*}*/);
                 titledpane_aanpassenGegevens.setVisible(false);
-            }
+            //}
         });
     }
 }
