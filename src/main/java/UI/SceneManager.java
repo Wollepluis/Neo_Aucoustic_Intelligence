@@ -1,5 +1,6 @@
 package UI;
 
+import Events.EventArgs;
 import Login.*;
 import com.example.neo_aucoustic_intelligence.*;
 import javafx.application.Application;
@@ -7,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.security.spec.ECField;
 
 public final class SceneManager {
 
@@ -14,6 +16,7 @@ public final class SceneManager {
     private static Stage inlogScherm;
     private static SceneManager instance;
 
+    // TODO verander throws IOException naar een try-catch
     public static void switchScene(int scherm) throws IOException {
         //scherm 0 = inlogpagina
         //scherm 1 = main page
@@ -57,5 +60,34 @@ public final class SceneManager {
             instance = new SceneManager();
         }
         return instance;
+    }
+
+    // TODO add try catch for auth args
+    private static void opGebruikerUitgelogd(Object sender, EventArgs args){
+        AuthenticationEventArgs authArgs = (AuthenticationEventArgs) args;
+        System.out.println("gebruiker is uitgelogd: " + authArgs.gebruiker.gebruikersNaam);
+        try{
+            SceneManager.switchScene(0);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+    }
+
+    // TODO ook hier try catch pluhacs
+    private static void opGebruikerIngelogd(Object sender, EventArgs args){
+        AuthenticationEventArgs authArgs = (AuthenticationEventArgs) args;
+        System.out.println("gebruiker is ingelogd: " + authArgs.gebruiker.gebruikersNaam);
+        try{
+            SceneManager.switchScene(1);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+    }
+
+    public static void initialize(){
+        Autenticator.getInstance().opUitloggen.subscribe(SceneManager::opGebruikerUitgelogd);
+        Autenticator.getInstance().opInloggen.subscribe(SceneManager::opGebruikerIngelogd);
     }
 }

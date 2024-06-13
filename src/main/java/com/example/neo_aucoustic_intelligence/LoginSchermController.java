@@ -33,14 +33,10 @@ public class LoginSchermController {
 
     @FXML
     void naarMain(ActionEvent event) throws IOException {
-
-
-        if (Autenticator.getInstance().inloggen(gebruikersNaamInput.getText(), wachtwoordInput.getText())) {
+        if (!Autenticator.getInstance().inloggen(gebruikersNaamInput.getText(), wachtwoordInput.getText())) {
             errorText.setDisable(false);
             errorText.opacityProperty().set(1);
         }
-
-
     }
 }
 

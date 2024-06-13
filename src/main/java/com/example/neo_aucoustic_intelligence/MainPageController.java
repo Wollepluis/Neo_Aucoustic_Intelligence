@@ -1,5 +1,6 @@
 package com.example.neo_aucoustic_intelligence;
 
+import Login.Autenticator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -88,7 +89,7 @@ public class MainPageController {
     @FXML
     void uitloggen(MouseEvent event) throws IOException {
 
-        SceneManager.switchScene(0);
+        Autenticator.getInstance().uitloggen();
 
     }
 

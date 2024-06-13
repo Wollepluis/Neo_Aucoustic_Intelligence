@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="">
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Autenticator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aucoustic-intelligence/Data/UserData/1/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Autenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Autenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/AuthenticationEventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/AuthenticationEventArgs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Login/Gebruiker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Gebruiker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/LoginSchermController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/LoginSchermController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718014046109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Autenticator">
+      <option name="closed" value="true" />
+      <created>1718278544524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718278544524</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,7 +134,8 @@
     <MESSAGE value="tests" />
     <MESSAGE value="Alles importen" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="Autenticator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autenticator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

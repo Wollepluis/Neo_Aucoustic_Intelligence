@@ -4,7 +4,7 @@ public class Gebruiker {
     public String gebruikersNaam;
     public String email;
     public String wachtwoord;
-    public boolean ingelogd;
+    public boolean isIngelogd;
 
     public Gebruiker(String gebruikersNaam, String email, String wachtwoord) {
         this.gebruikersNaam = gebruikersNaam;
