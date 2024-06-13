@@ -201,6 +201,9 @@ public class MainPageController {
             }
         });
 
+
+        // test
+
         // Add the newButton to a layout pane or a container (not shown in your snippet).
 
         //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
