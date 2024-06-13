@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Autenticator">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Autenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Autenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login/AuthenticationEventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/AuthenticationEventArgs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Gebruiker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Gebruiker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/LoginSchermController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/LoginSchermController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/neo_aucoustic_intelligence/MainPageController.java" afterDir="false" />
-    </list>
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="uitloggen en inlog" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718278544524</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="uitloggen en inlog">
+      <option name="closed" value="true" />
+      <created>1718281501688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718281501688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +134,8 @@
     <MESSAGE value="Alles importen" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Autenticator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autenticator" />
+    <MESSAGE value="uitloggen en inlog" />
+    <option name="LAST_COMMIT_MESSAGE" value="uitloggen en inlog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
