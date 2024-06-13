@@ -182,41 +182,6 @@ public class MainPageController {
             }
         });
 
-        // dit hieronder is een test
-        class EditableButtonApp extends Application {
-
-            @Override
-            public void start(Stage primaryStage) {
-                BorderPane root = new BorderPane();
-
-                root.setCenter(new EditableButton("Editable Button"));
-
-                primaryStage.setScene(new Scene(root));
-                primaryStage.show();
-            }
-
-            class EditableButton extends Button {
-                TextField tf = new TextField();
-
-                public EditableButton(String text) {
-                    setText(text);
-                    setOnMouseClicked(e -> {
-                        tf.setText(getText());
-                        setText("");
-                        setGraphic(tf);
-                    });
-
-                    tf.setOnAction(ae -> {
-//              if (validateText(tf.getText())) {// this is where you would validate the text
-                        setText(tf.getText());
-                        setGraphic(null);
-//            }
-                    });
-                }
-            }
-
-        };
-        // t/m hier
 
             //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
 
