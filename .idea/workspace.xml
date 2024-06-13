@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="workspace.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Tests/MockupDatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Tests/MockupDatabaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
+    <list default="true" id="1bb29d64-da29-4264-9ff8-5a8e2bdcf4f1" name="Changes" comment="Main">
       <change beforePath="$PROJECT_DIR$/src/main/java/Database/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/MockupDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/MockupDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,8 @@
     <MESSAGE value="tests" />
     <MESSAGE value="Alles importen" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
