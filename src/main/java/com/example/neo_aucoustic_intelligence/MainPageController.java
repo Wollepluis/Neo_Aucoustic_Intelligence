@@ -53,6 +53,9 @@ public class MainPageController {
     private Button button_popupOnderwerp;
 
     @FXML
+    private Button button_cancelGegevens;
+
+    @FXML
     private ImageView button_showSidebar;
 
     @FXML
@@ -244,12 +247,25 @@ public class MainPageController {
                 text_aanpassenGegevens.setText("Voer uw nieuwe gebruikersnaam in");
                 textfield_aanpassenGegevens.setVisible(true);
                 button_bevestigenGegevens.setVisible(true);
+                button_cancelGegevens.setVisible(true);
                 button_bevestigenGegevens.setOnMouseClicked(event1 -> {
                     if (event1.getButton() == MouseButton.PRIMARY) {
                         //Hier moet dan komen dat textfield_aanpassengegevens de nieuwe gebruikersnaam wordt van de gebruiker
+                        titledpane_aanpassenGegevens.setVisible(false);
                     }
                 });
-                titledpane_aanpassenGegevens.setVisible(false);
+                button_cancelGegevens.setOnMouseClicked(event1 -> {
+                    if (event1.getButton() == MouseButton.PRIMARY) {
+                        button_aanpassenEmail.setVisible(true);
+                        button_aanpassenWachtwoord.setVisible(true);
+                        button_aanpassenGebruikersnaam.setVisible(true);
+                        text_aanpassenGegevens.setText("Kies wat je aan wilt passen");
+                        textfield_aanpassenGegevens.setVisible(false);
+                        button_bevestigenGegevens.setVisible(false);
+                        button_cancelGegevens.setVisible(false);
+                        titledpane_aanpassenGegevens.setVisible(false);
+                    }
+                });
             }
         });
         button_aanpassenEmail.setOnMouseClicked(event -> {
@@ -260,29 +276,55 @@ public class MainPageController {
                 text_aanpassenGegevens.setText("Voer uw nieuwe emailadres in");
                 textfield_aanpassenGegevens.setVisible(true);
                 button_bevestigenGegevens.setVisible(true);
+                button_cancelGegevens.setVisible(true);
                 button_bevestigenGegevens.setOnMouseClicked(event1 -> {
                     if (event1.getButton() == MouseButton.PRIMARY) {
                         //Hier moet dan komen dat textfield_aanpassengegevens het nieuwe emailadres wordt van de gebruiker
+                        titledpane_aanpassenGegevens.setVisible(false);
                     }
                 });
-                titledpane_aanpassenGegevens.setVisible(false);
+                button_cancelGegevens.setOnMouseClicked(event1 -> {
+                    if (event1.getButton() == MouseButton.PRIMARY) {
+                        button_aanpassenEmail.setVisible(true);
+                        button_aanpassenWachtwoord.setVisible(true);
+                        button_aanpassenGebruikersnaam.setVisible(true);
+                        text_aanpassenGegevens.setText("Kies wat je aan wilt passen");
+                        textfield_aanpassenGegevens.setVisible(false);
+                        button_bevestigenGegevens.setVisible(false);
+                        button_cancelGegevens.setVisible(false);
+                        titledpane_aanpassenGegevens.setVisible(false);
+                    }
+                });
             }
         });
-        button_aanpassenWachtwoord.setOnAction(event -> {
-            //if (event.getButton() == MouseButton.PRIMARY) {
+        button_aanpassenWachtwoord.setOnMouseClicked(event -> {
+            if (event.getButton() == MouseButton.PRIMARY) {
                 button_aanpassenEmail.setVisible(false);
                 button_aanpassenWachtwoord.setVisible(false);
                 button_aanpassenGebruikersnaam.setVisible(false);
                 text_aanpassenGegevens.setText("Voer uw nieuwe wachtwoord in");
                 passwordField_aanpassenGegevens.setVisible(true);
                 button_bevestigenGegevens.setVisible(true);
-                button_bevestigenGegevens.setOnAction(event1 -> {
-                    //if (event1.getButton() == MouseButton.PRIMARY) {
+                button_cancelGegevens.setVisible(true);
+                button_bevestigenGegevens.setOnMouseClicked(event1 -> {
+                    if (event1.getButton() == MouseButton.PRIMARY) {
                         //Hier moet dan komen dat textfield_aanpassengegevens het nieuwe wachtwoord wordt van de gebruiker
+                        titledpane_aanpassenGegevens.setVisible(false);
                     }
-                /*}*/);
-                titledpane_aanpassenGegevens.setVisible(false);
-            //}
+                });
+                button_cancelGegevens.setOnMouseClicked(event1 -> {
+                    if (event1.getButton() == MouseButton.PRIMARY) {
+                        button_aanpassenEmail.setVisible(true);
+                        button_aanpassenWachtwoord.setVisible(true);
+                        button_aanpassenGebruikersnaam.setVisible(true);
+                        text_aanpassenGegevens.setText("Kies wat je aan wilt passen");
+                        textfield_aanpassenGegevens.setVisible(false);
+                        button_bevestigenGegevens.setVisible(false);
+                        button_cancelGegevens.setVisible(false);
+                        titledpane_aanpassenGegevens.setVisible(false);
+                    }
+                });
+            }
         });
     }
 }

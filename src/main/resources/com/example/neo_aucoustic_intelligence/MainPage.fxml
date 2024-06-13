@@ -95,7 +95,7 @@
         </content>
       </TitledPane>
       <Button fx:id="uitlogKnop" layoutX="723.0" layoutY="90.0" mnemonicParsing="false" onAction="#uitloggen" onMouseClicked="#uitloggen" text="Uitloggen" />
-      <TitledPane fx:id="titledpane_aanpassenGegevens" animated="false" layoutX="600.0" layoutY="150.0" prefHeight="136.0" prefWidth="202.0" text="untitled" visible="false">
+      <TitledPane fx:id="titledpane_aanpassenGegevens" animated="false" layoutX="600.0" layoutY="150.0" prefHeight="136.0" prefWidth="202.0" text="Aanpassen Gegevens" visible="false">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
@@ -105,7 +105,8 @@
                   <Text fx:id="text_aanpassenGegevens" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kies wat je wilt aanpassen" />
                   <TextField fx:id="textfield_aanpassenGegevens" layoutX="26.0" layoutY="57.0" visible="false" />
                   <PasswordField fx:id="passwordField_aanpassenGegevens" layoutX="26.0" layoutY="57.0" visible="false" />
-                  <Button fx:id="button_bevestigenGegevens" layoutX="63.0" layoutY="84.0" mnemonicParsing="false" text="Bevestigen" visible="false" />
+                  <Button fx:id="button_bevestigenGegevens" layoutX="24.0" layoutY="84.0" mnemonicParsing="false" text="Bevestigen" visible="false" />
+                  <Button fx:id="button_cancelGegevens" layoutX="101.0" layoutY="84.0" mnemonicParsing="false" text="Cancel" visible="false" />
                </children>
             </AnchorPane>
         </content>
