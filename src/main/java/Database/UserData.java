@@ -5,15 +5,19 @@ import java.util.ArrayList;
 public class UserData extends DataObject {
     private String gebruikersnaam;
     private String wachtwoord;
-    private ArrayList<DataObject> chats;
+    public ArrayList<DataObject> chats;
 
     public UserData() {
         chats = new ArrayList<>();
     }
-    public UserData(String id, String type) {
-        this.id = id;
-        this.type = type;
+    public UserData(String gebruikersnaam, String wachtwoord) {
+        this.id = gebruikersnaam;
+        this.type = "UserData";
+        this.gebruikersnaam = gebruikersnaam;
+        this.wachtwoord = wachtwoord;
         chats = new ArrayList<>();
+        addChat(new ChatData("Is Abhishrek de niggerman"));
+
     }
 
 
@@ -37,11 +41,8 @@ public class UserData extends DataObject {
     public void addChat(DataObject chatData) {
         chats.add(chatData);
     }
-    public void getChats() {
-        for (int i = 0; i < chats.size(); i++) {
-            System.out.println(getChat(chats.get(i)).id);
-            System.out.println(getChat(chats.get(i)).type);
-        }
+    public ArrayList<DataObject> getChats() {
+        return chats;
     }
     @Override
     public String toString() {
@@ -67,7 +68,7 @@ public class UserData extends DataObject {
         int i = 0;
         while (true) {
             String chat = saveData.readAttribute("chat" + i);
-            if (chat == null) return;
+            if (chat == null || chat.equals("null")) return;
             addChat(SaveManager.loadDataObject(chat, "ChatData"));
             i++;
         }

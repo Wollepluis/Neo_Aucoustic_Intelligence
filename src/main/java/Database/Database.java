@@ -13,7 +13,7 @@ public abstract class Database {
 
     public abstract DataObject getData(String id, String type);
 
-    public abstract void uploadData(DataObject data, String dataType);
+    public abstract void uploadData(DataObject data);
 
 
 

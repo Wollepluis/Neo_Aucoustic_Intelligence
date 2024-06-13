@@ -15,7 +15,7 @@ public class MockupDatabaseTest {
         mockupDatabase = new MockupDatabase();
         this.testData = new UserData();
         this.testData.type = "UserData";
-        mockupDatabase.uploadData(testData, testData.type);
+        mockupDatabase.uploadData(testData);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class MockupDatabaseTest {
         mockupDatabase = new MockupDatabase();
         this.testData = new UserData();
         this.testData.type = "UserData";
-        this.mockupDatabase.uploadData(this.testData, this.testData.type);
+        this.mockupDatabase.uploadData(this.testData);
         DataObject retrievedData = this.mockupDatabase.getData("1", "UserData");
         assertNotNull(retrievedData);
         assertEquals("1", retrievedData.id);
