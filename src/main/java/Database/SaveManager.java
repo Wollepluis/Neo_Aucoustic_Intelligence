@@ -73,6 +73,15 @@ public class SaveManager {
         writeToFile(saveData.getData(), persistentDataPath + "/Data/" + dataObject.type + "/" + dataObject.id + "/" + dataObject.id + ".txt");
     }
 
+    public static UserData loadUserData(String id) {
+        SaveData saveData = new SaveData();
+        String rawData = readFile(persistentDataPath + "/Data/UserData/" + id + "/" + id + ".txt").trim();
+        saveData.setData(rawData);
+        UserData dataObject = new UserData();
+        dataObject.load(saveData);
+        return dataObject;
+
+    }
     public static DataObject loadDataObject(String id, String type){
         SaveData saveData = new SaveData();
         String rawData = readFile(persistentDataPath + "/Data/" + type + "/" + id + "/" + id + ".txt").trim();

@@ -26,7 +26,7 @@ public class SaveData {
         String[] splitData = data.split(":");
         for (String s : splitData) {
             String[] finaleData = s.split("=");
-            this.data.put(finaleData[0], finaleData[1]);
+            //this.data.put(finaleData[0], finaleData[1]);
         }
     }
 }

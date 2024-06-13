@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Sui Generis';
+    src: url(sui_generis_rg.otf);
+}
+
+.scrollpane {
+    -fx-background-color: transparent;
+ }
