@@ -182,8 +182,8 @@ public class MainPageController {
         newButton.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.SECONDARY) {
                 Scanner scanner = new Scanner(System.in);
-                titledpane_popupOnderwerp.setVisible(true); // Dit moet een pop up window ofzo worden in scenebuilder
-                newButton.setText(nieuweText);
+                titledpane_popupOnderwerp.setVisible(true);
+                newButton.setText(" ");
             }
         });
         //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
