@@ -26,7 +26,12 @@ public class SaveData {
         String[] splitData = data.split(":");
         for (String s : splitData) {
             String[] finaleData = s.split("=");
-            //this.data.put(finaleData[0], finaleData[1]);
+            if (finaleData.length == 2) {  // Controleer of splitData twee delen bevat
+                this.data.put(finaleData[0], finaleData[1]);
+            } else {
+                System.err.println("Ongeldig dataformaat: " + s);
+            }
         }
     }
+
 }

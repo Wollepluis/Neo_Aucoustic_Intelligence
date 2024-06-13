@@ -80,8 +80,26 @@ public class SaveManager {
         UserData dataObject = new UserData();
         dataObject.load(saveData);
         return dataObject;
-
     }
+    public static ChatData loadChatData(String id) {
+        SaveData saveData = new SaveData();
+        String rawData = readFile(persistentDataPath + "/Data/ChatData/" + id + "/" + id + ".txt").trim();
+        saveData.setData(rawData);
+        ChatData dataObject = new ChatData();
+        dataObject.load(saveData);
+        return dataObject;
+    }
+
+    public static GeschiedenisData loadGeschiedenisData(String id) {
+        SaveData saveData = new SaveData();
+        String rawData = readFile(persistentDataPath + "/Data/GeschiedenisData/" + id + "/" + id + ".txt").trim();
+        saveData.setData(rawData);
+        GeschiedenisData dataObject = new GeschiedenisData();
+        dataObject.load(saveData);
+        return dataObject;
+    }
+
+
     public static DataObject loadDataObject(String id, String type){
         SaveData saveData = new SaveData();
         String rawData = readFile(persistentDataPath + "/Data/" + type + "/" + id + "/" + id + ".txt").trim();
@@ -89,20 +107,15 @@ public class SaveManager {
         DataObject dataObject;
         switch (type) {
             case "UserData":
-                dataObject = new UserData();
-                break;
+                return loadUserData(id);
             case "ChatData":
-                dataObject = new ChatData();
-                break;
+                return loadChatData(id);
             case "GeschiedenisData":
-                dataObject = new GeschiedenisData();
-                break;
+                return loadGeschiedenisData(id);
             default:
                 dataObject = null;
         }
-        dataObject.load(saveData);
-
-        return dataObject;
+        return null;
     }
 
     public static Map<Map<String, String>, DataObject> loadAllDataObjecten(String type) {
@@ -124,6 +137,7 @@ public class SaveManager {
     public static void initialize(){
         MockupDatabase database = new MockupDatabase();
         database.mapje = loadAllDataObjecten("UserData");
-        mapje = loadAllDataObjecten("ChatData");
+        database.mapje = loadAllDataObjecten("ChatData");
+        database.mapje = loadAllDataObjecten("GeschiedenisData");
     }
 }

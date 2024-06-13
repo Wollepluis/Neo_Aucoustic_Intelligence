@@ -23,6 +23,10 @@ public class MockupDatabase extends Database {
     }
 
     public void uploadData(DataObject data) {
+        if (!(data instanceof UserData)) {
+            int size = hashMap.size() + 1;
+            data.id = Integer.toString(size);
+        }
         SaveData saveData = new SaveData();
         hashMap.put(data.id, data.type);
         mapje.put(hashMap, data);

@@ -13,6 +13,10 @@ public class ChatData extends DataObject {
         berichten = new ArrayList<>();
     }
 
+    public ArrayList<DataObject> getBerichten() {
+        return berichten;
+    }
+
     public void addBericht(DataObject dataObject) {
         berichten.add(dataObject);
     }
