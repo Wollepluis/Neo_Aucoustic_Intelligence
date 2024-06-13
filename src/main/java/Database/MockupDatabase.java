@@ -24,6 +24,14 @@ public class MockupDatabase extends Database {
         // TODO iemand moet dit ooit nog eens maken zodat opgeslagen wordt als verstuurd bericht wordtddt
     }
 
+    /*
+    public UserData getGebruiker(String gebruiker, String wachtwoord) {
+        if(gebruiker.equals(SaveManager.loadUserData(gebruiker).getGebruikersnaam()) && (wachtwoord.equals(SaveManager.loadUserData(gebruiker).getWachtwoord()))) {
+            return SaveManager.loadUserData(gebruiker);
+        }
+        return null;
+    }*/
+
     public void uploadData(DataObject data, String dataType) {
         int size = hashMap.size() + 1;
         data.id = Integer.toString(size);

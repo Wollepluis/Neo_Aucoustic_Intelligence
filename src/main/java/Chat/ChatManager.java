@@ -18,23 +18,22 @@ public class ChatManager {
         return chats;
     }
 
-    public Chat getChat(int id){
+    public Chat getChat(int id) {
         for (Chat chat : chats) {
             if (chat.getId() == id){
                 return chat;
             }
         }
-        return null;
+        addChat(createNewChat(id, "Nieuw onderwerp"));
+        return getChat(id);
     }
 
     public void addChat(Chat chat){
         chats.add(chat);
     }
 
-    public void createNewChat(String onderwerp){
-        int newId = chats.size();
-        Chat newChat = new Chat(newId, onderwerp);
-        addChat(newChat);
+    public Chat createNewChat(int id, String onderwerp){
+        return new Chat(id, onderwerp);
     }
 
     private ChatManager(){
