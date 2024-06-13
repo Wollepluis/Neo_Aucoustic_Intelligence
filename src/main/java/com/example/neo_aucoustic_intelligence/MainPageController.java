@@ -2,9 +2,11 @@ package com.example.neo_aucoustic_intelligence;
 
 import Chat.Bericht;
 import Chat.BerichtHandler;
+import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -20,7 +22,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import javafx.scene.Node;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import messageMediator.BerichtEventArgs;
 import messageMediator.MessageMediator;
 
@@ -178,9 +182,43 @@ public class MainPageController {
             }
         });
 
+        // dit hieronder is een test
+        class EditableButtonApp extends Application {
 
-        newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
-        });
+            @Override
+            public void start(Stage primaryStage) {
+                BorderPane root = new BorderPane();
+
+                root.setCenter(new EditableButton("Editable Button"));
+
+                primaryStage.setScene(new Scene(root));
+                primaryStage.show();
+            }
+
+            class EditableButton extends Button {
+                TextField tf = new TextField();
+
+                public EditableButton(String text) {
+                    setText(text);
+                    setOnMouseClicked(e -> {
+                        tf.setText(getText());
+                        setText("");
+                        setGraphic(tf);
+                    });
+
+                    tf.setOnAction(ae -> {
+//              if (validateText(tf.getText())) {// this is where you would validate the text
+                        setText(tf.getText());
+                        setGraphic(null);
+//            }
+                    });
+                }
+            }
+
+        };
+        // t/m hier
+
+            //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
 
         vBox_sidebar.getChildren().add(newButton);
     }
