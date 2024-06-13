@@ -2,6 +2,9 @@ package Database;
 
 public class Main {
     public static void main(String[] args) {
+
+        System.out.println("HOOOOOOOOI");
+
         SaveManager.initialize();
         UserData dataObject = new UserData("Morris","12345");
         DataObject dataObject1 = dataObject.chats.get(0);
