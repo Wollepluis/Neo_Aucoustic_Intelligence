@@ -2,30 +2,21 @@ package com.example.neo_aucoustic_intelligence;
 
 import Login.Autenticator;
 import Chat.Bericht;
-import Chat.BerichtHandler;
-import javafx.application.Application;
+import MessageMediator.BerichtEventArgs;
+import MessageMediator.MessageMediator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import Login.Login;
 import UI.*;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
-
-import javafx.scene.Node;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
-import messageMediator.BerichtEventArgs;
-import messageMediator.MessageMediator;
 
 public class MainPageController {
 
@@ -138,7 +129,7 @@ public class MainPageController {
             BerichtEventArgs berichtEventArgs = new BerichtEventArgs();
             // berichtEventArgs.chatID = ;
             berichtEventArgs.bericht = new Bericht("", txt_promptField.getText());
-            MessageMediator.krijgInstance().berichtVerstuurd.invoke(this, berichtEventArgs);
+            MessageMediator.krijgInstantie().opBerichtVerstuurd.invoke(this, berichtEventArgs);
 
             //todo UI deel + kleur van text in prompt veld moet aangepast worden
             newLabel();
