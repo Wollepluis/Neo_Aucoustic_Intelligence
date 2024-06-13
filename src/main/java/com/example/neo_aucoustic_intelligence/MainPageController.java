@@ -103,7 +103,7 @@ public class MainPageController {
             //todo UI deel + kleur van text in prompt veld moet aangepast worden
             newLabel();
             txt_promptField.clear();
-            //newAIAnswer();
+            newAIAnswer();
         }
     }
 
