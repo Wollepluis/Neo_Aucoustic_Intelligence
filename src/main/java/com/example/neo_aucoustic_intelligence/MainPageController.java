@@ -197,7 +197,6 @@ public class MainPageController {
     }
 
     public void setButtonText(Button newButton) {
-        System.out.println("test2");
         titledpane_popupOnderwerp.setVisible(true);
         button_popupOnderwerp.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.PRIMARY) {
@@ -224,12 +223,7 @@ public class MainPageController {
             }
         });
 
-
-        // test
-
-        // Add the newButton to a layout pane or a container (not shown in your snippet).
-
-        //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
+        //newButton.setOnAction(event -> {
 
         vBox_sidebar.getChildren().add(newButton);
     }
