@@ -182,8 +182,7 @@ public class MainPageController {
         newButton.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.SECONDARY) {
                 Scanner scanner = new Scanner(System.in);
-                System.out.println("Voer nieuwe naam in:"); // Dit moet een pop up window ofzo worden in scenebuilder
-                String nieuweText = scanner.nextLine();
+                titledpane_popupOnderwerp.setVisible(true); // Dit moet een pop up window ofzo worden in scenebuilder
                 newButton.setText(nieuweText);
             }
         });

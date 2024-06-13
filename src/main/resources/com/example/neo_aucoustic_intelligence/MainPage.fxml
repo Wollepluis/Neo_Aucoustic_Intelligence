@@ -42,7 +42,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="uitlogKnop" layoutX="723.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#uitloggen" text="Uitloggen" />
+      <Button fx:id="button_gegevensAanpassen" layoutX="723.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#uitloggen" text="Pas gegevens aan" />
       <AnchorPane fx:id="sidebar" layoutY="7.0" prefHeight="393.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="newChat" fitHeight="40.0" fitWidth="56.0" layoutX="146.0" layoutY="14.0" onMouseClicked="#setNewChat" pickOnBounds="true" preserveRatio="true">
@@ -87,10 +87,11 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <TextField fx:id="textfield_popupOnderwerp" layoutX="14.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0" />
-                  <Button fx:id="button_popupOnderwerp" layoutX="80.0" layoutY="40.0" mnemonicParsing="false" text="Bevestigen" />
+                  <Button fx:id="button_popupOnderwerp" layoutX="80.0" layoutY="40.0" mnemonicParsing="false" onAction="#set" text="Bevestigen" />
                </children>
             </AnchorPane>
         </content>
       </TitledPane>
+      <Button fx:id="uitlogKnop" layoutX="723.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#uitloggen" text="Uitloggen" />
    </children>
 </AnchorPane>
