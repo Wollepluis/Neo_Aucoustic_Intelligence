@@ -173,10 +173,10 @@ public class MainPageController {
 
     public String setButtonText() {
         titledpane_popupOnderwerp.setVisible(true);
-        String nieuweText = textfield_popupOnderwerp.getText();
         button_popupOnderwerp.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.PRIMARY){
-                return nieuweText;
+                String nieuweText = textfield_popupOnderwerp.getText();
+                Button.setText(nieuweText);
             }
         }
         );
