@@ -171,16 +171,15 @@ public class MainPageController {
         uitlogKnop.setVisible(false);
     }
 
-    public String setButtonText() {
+    public void setButtonText(Button newButton) {
+        System.out.println("test2");
         titledpane_popupOnderwerp.setVisible(true);
         button_popupOnderwerp.setOnMouseClicked(event -> {
-            if (event.getButton() == MouseButton.PRIMARY){
-                String nieuweText = textfield_popupOnderwerp.getText();
-                Button.setText(nieuweText);
+            if (event.getButton() == MouseButton.PRIMARY) {
+                newButton.setText(textfield_popupOnderwerp.getText());
             }
         }
         );
-        return null;
     }
 
     public void setButtonId(){}
@@ -194,7 +193,10 @@ public class MainPageController {
         newButton.setId("chatButton" + allButtons.size());
         newButton.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.SECONDARY) {
-                newButton.setText(setButtonText());
+                System.out.println("test");
+                setButtonText(newButton);
+                System.out.println("test1");
+                titledpane_popupOnderwerp.setVisible(false);
             }
         });
         //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
