@@ -182,6 +182,14 @@ public class MainPageController {
             }
         });
 
+        public String returnText{
+            if (button_popupOnderwerp){
+                setButtonText(String);
+            }
+
+                    return String;
+        }
+
 
             //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
 
