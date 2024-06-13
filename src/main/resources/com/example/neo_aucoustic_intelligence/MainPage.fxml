@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -81,5 +82,15 @@
                </children></AnchorPane>
          </content>
       </ScrollPane>
+      <TitledPane fx:id="titledpane_popupOnderwerp" animated="false" layoutX="299.0" layoutY="265.0" prefHeight="95.0" prefWidth="233.0" text="Pas het onderwerp van de button aan">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textfield_popupOnderwerp" layoutX="14.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0" />
+                  <Button fx:id="button_popupOnderwerp" layoutX="80.0" layoutY="40.0" mnemonicParsing="false" text="Bevestigen" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
    </children>
 </AnchorPane>
