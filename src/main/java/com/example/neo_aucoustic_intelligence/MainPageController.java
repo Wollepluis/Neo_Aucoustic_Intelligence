@@ -21,7 +21,6 @@ import java.util.Scanner;
 import javafx.scene.Node;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import messageMediator.BerichtEventArgs;
 import messageMediator.MessageMediator;
@@ -32,28 +31,16 @@ public class MainPageController {
     private Button Button_sendPrompt;
 
     @FXML
-    private Button button_aanpassenEmail;
-
-    @FXML
-    private Button button_aanpassenGebruikersnaam;
-
-    @FXML
-    private Button button_aanpassenWachtwoord;
-
-    @FXML
-    private Button button_gegevensAanpassen;
-
-    @FXML
     private Button button_logoutDropdown;
 
     @FXML
-    private Button button_popupOnderwerp;
-
-    @FXML
-    private Button button_bevestigenGegevens;
-
-    @FXML
     private ImageView button_showSidebar;
+
+    @FXML
+    private ScrollPane scrollpane1;
+
+    @FXML
+    private AnchorPane textUitvoer;
 
     @FXML
     private Label label_title;
@@ -62,13 +49,7 @@ public class MainPageController {
     private ImageView newChat;
 
     @FXML
-    private PasswordField passwordField_aanpassenGegevens;
-
-    @FXML
     private ScrollPane scrollpane;
-
-    @FXML
-    private ScrollPane scrollpane1;
 
     @FXML
     private AnchorPane sidebar;
@@ -77,28 +58,13 @@ public class MainPageController {
     private AnchorPane sidebar_chat;
 
     @FXML
-    private AnchorPane textUitvoer;
-
-    @FXML
-    private Text text_aanpassenGegevens;
-
-    @FXML
-    private TextField textfield_aanpassenGegevens;
-
-    @FXML
-    private TextField textfield_popupOnderwerp;
-
-    @FXML
-    private TitledPane titledpane_aanpassenGegevens;
-
-    @FXML
-    private TitledPane titledpane_popupOnderwerp;
-
-    @FXML
     private TextField txt_promptField;
 
     @FXML
     private Button uitlogKnop;
+
+    @FXML
+    private Label newLabel;
 
     @FXML
     private VBox vBox_AI;
@@ -108,6 +74,21 @@ public class MainPageController {
 
     @FXML
     private VBox vBox_sidebar;
+
+    @FXML
+    private Button button_popupOnderwerp;
+
+    @FXML
+    private TextField textfield_popupOnderwerp;
+
+    @FXML
+    private TitledPane titledpane_popupOnderwerp;
+
+    @FXML
+    private Button button_gegevensAanpassen;
+
+    private ArrayList<Button> allButtons = new ArrayList<>();
+
 
     @FXML
     void logoutDropdown(ActionEvent event) {
@@ -198,28 +179,33 @@ public class MainPageController {
         button_popupOnderwerp.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.PRIMARY) {
                 newButton.setText(textfield_popupOnderwerp.getText());
+                titledpane_popupOnderwerp.setVisible(false);
             }
-        }
-        );
+        });
     }
 
-    public void setButtonId(){}
     @FXML
     void setNewChat(MouseEvent event1) {
         vBox_sidebar.setAlignment(Pos.BASELINE_CENTER);
         vBox_sidebar.setSpacing(20.0);
         vBox_sidebar.setPadding(new javafx.geometry.Insets(10, 0, 0, 0));
+
         Button newButton = new Button("Voer onderwerp in");
-        ArrayList<Button> allButtons = new ArrayList<>();
         newButton.setId("chatButton" + allButtons.size());
+        allButtons.add(newButton);
+
         newButton.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.SECONDARY) {
-                System.out.println("test");
                 setButtonText(newButton);
-                System.out.println("test1");
-                titledpane_popupOnderwerp.setVisible(false);
+                titledpane_popupOnderwerp.setVisible(true);
             }
         });
+
+
+        // test
+
+        // Add the newButton to a layout pane or a container (not shown in your snippet).
+
         //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
 
         vBox_sidebar.getChildren().add(newButton);
