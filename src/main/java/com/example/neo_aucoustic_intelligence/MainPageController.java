@@ -7,10 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
@@ -77,6 +74,15 @@ public class MainPageController {
 
     @FXML
     private VBox vBox_sidebar;
+
+    @FXML
+    private Button button_popupOnderwerp;
+
+    @FXML
+    private TextField textfield_popupOnderwerp;
+
+    @FXML
+    private TitledPane titledpane_popupOnderwerp;
 
 
     @FXML
@@ -176,22 +182,11 @@ public class MainPageController {
         newButton.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.SECONDARY) {
                 Scanner scanner = new Scanner(System.in);
-                System.out.println("Voer nieuwe naam in:"); // Dit moet een pop up window ofzo worden in scenebuilder
-                String nieuweText = scanner.nextLine();
+                titledpane_popupOnderwerp.setVisible(true); // Dit moet een pop up window ofzo worden in scenebuilder
                 newButton.setText(nieuweText);
             }
         });
-
-        public String returnText{
-            if (button_popupOnderwerp){
-                setButtonText(String);
-            }
-
-                    return String;
-        }
-
-
-            //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
+        //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt
 
         vBox_sidebar.getChildren().add(newButton);
     }
