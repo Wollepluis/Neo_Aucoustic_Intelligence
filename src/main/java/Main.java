@@ -8,5 +8,6 @@ public class Main {
 
         BerichtHandler berichtHandler = BerichtHandler.getInstance();
 
+
     }
 }
