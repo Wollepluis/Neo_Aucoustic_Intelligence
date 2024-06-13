@@ -84,14 +84,19 @@ public class MainPageController {
     @FXML
     private TitledPane titledpane_popupOnderwerp;
 
+    @FXML
+    private Button button_gegevensAanpassen;
+
 
     @FXML
     void logoutDropdown(ActionEvent event) {
         if (uitlogKnop.isVisible()) {
             uitlogKnop.setVisible(false);
+            button_gegevensAanpassen.setVisible(false);
         }
         else {
             uitlogKnop.setVisible(true);
+            button_gegevensAanpassen.setVisible(true);
         }
     }
 
@@ -166,8 +171,16 @@ public class MainPageController {
         uitlogKnop.setVisible(false);
     }
 
-    public void setButtonText(Button button, String text) {
-        button.setText(text);
+    public String setButtonText() {
+        titledpane_popupOnderwerp.setVisible(true);
+        String nieuweText = textfield_popupOnderwerp.getText();
+        button_popupOnderwerp.setOnMouseClicked(event -> {
+            if (event.getButton() == MouseButton.PRIMARY){
+                return nieuweText;
+            }
+        }
+        );
+        return null;
     }
 
     public void setButtonId(){}
@@ -181,9 +194,7 @@ public class MainPageController {
         newButton.setId("chatButton" + allButtons.size());
         newButton.setOnMouseClicked(event -> {
             if (event.getButton() == MouseButton.SECONDARY) {
-                Scanner scanner = new Scanner(System.in);
-                titledpane_popupOnderwerp.setVisible(true);
-                newButton.setText(" ");
+                newButton.setText(setButtonText());
             }
         });
         //newButton.setOnAction(event -> { //todo hier moet komen dat de chat zichtbaar wordt op het moment dat er op de knop geduwd wordt

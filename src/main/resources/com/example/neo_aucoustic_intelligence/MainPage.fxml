@@ -42,7 +42,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="button_gegevensAanpassen" layoutX="723.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#uitloggen" text="Pas gegevens aan" />
+      <Button fx:id="button_gegevensAanpassen" layoutX="689.0" layoutY="63.0" mnemonicParsing="false" onMouseClicked="#uitloggen" text="Pas gegevens aan" visible="false" />
       <AnchorPane fx:id="sidebar" layoutY="7.0" prefHeight="393.0" prefWidth="200.0" style="-fx-background-color: #1d1d1d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="newChat" fitHeight="40.0" fitWidth="56.0" layoutX="146.0" layoutY="14.0" onMouseClicked="#setNewChat" pickOnBounds="true" preserveRatio="true">
@@ -82,16 +82,16 @@
                </children></AnchorPane>
          </content>
       </ScrollPane>
-      <TitledPane fx:id="titledpane_popupOnderwerp" animated="false" layoutX="299.0" layoutY="265.0" prefHeight="95.0" prefWidth="233.0" text="Pas het onderwerp van de button aan">
+      <TitledPane fx:id="titledpane_popupOnderwerp" animated="false" layoutX="299.0" layoutY="265.0" prefHeight="95.0" prefWidth="233.0" text="Pas het onderwerp van de button aan" visible="false">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <TextField fx:id="textfield_popupOnderwerp" layoutX="14.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0" />
-                  <Button fx:id="button_popupOnderwerp" layoutX="80.0" layoutY="40.0" mnemonicParsing="false" onAction="#set" text="Bevestigen" />
+                  <Button fx:id="button_popupOnderwerp" layoutX="80.0" layoutY="40.0" mnemonicParsing="false" text="Bevestigen" />
                </children>
             </AnchorPane>
         </content>
       </TitledPane>
-      <Button fx:id="uitlogKnop" layoutX="723.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#uitloggen" text="Uitloggen" />
+      <Button fx:id="uitlogKnop" layoutX="723.0" layoutY="90.0" mnemonicParsing="false" onAction="#uitloggen" onMouseClicked="#uitloggen" text="Uitloggen" />
    </children>
 </AnchorPane>
