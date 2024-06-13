@@ -1,7 +1,5 @@
 package com.example.neo_aucoustic_intelligence;
 
-import Chat.Bericht;
-import Chat.BerichtHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,10 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import Login.Login;
 import UI.*;
 import java.io.IOException;
-import java.util.Scanner;
 
 import javafx.scene.Node;
 

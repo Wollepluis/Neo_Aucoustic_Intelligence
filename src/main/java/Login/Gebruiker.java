@@ -19,7 +19,6 @@ public class Gebruiker {
     public void setWachtwoord(String wachtwoord) {
         this.wachtwoord = wachtwoord;
     }
-
     public void setGebruikersNaam(String gebruikersNaam) {
         this.gebruikersNaam = gebruikersNaam;
     }
@@ -41,6 +40,5 @@ public class Gebruiker {
     public void pasWachtwoordAan() {
         wachtwoord = wachtwoordVeranderInput;
     }
-
      */
 }

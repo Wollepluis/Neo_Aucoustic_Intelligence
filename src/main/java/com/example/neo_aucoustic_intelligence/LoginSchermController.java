@@ -1,7 +1,6 @@
 package com.example.neo_aucoustic_intelligence;
 
-import Login.Login;
-import UI.SceneManager;
+import Login.Autenticator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -12,7 +11,6 @@ import javafx.scene.layout.AnchorPane;
 import java.io.IOException;
 
 public class LoginSchermController {
-
 
 
     @FXML
@@ -35,14 +33,15 @@ public class LoginSchermController {
 
     @FXML
     void naarMain(ActionEvent event) throws IOException {
-        Login login = new Login(gebruikersNaamInput.getText(), wachtwoordInput.getText());
-        if(login.inloggen()) {
-            System.out.println("teset222");
+
+
+        if (Autenticator.getInstance().inloggen(gebruikersNaamInput.getText(), wachtwoordInput.getText())) {
             errorText.setDisable(false);
             errorText.opacityProperty().set(1);
         }
 
-        }
+
     }
+}
 
 
